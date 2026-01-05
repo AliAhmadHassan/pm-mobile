@@ -1,0 +1,171 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="TESTE_ZPMF_MATCHCODE_LISTA_EQUI">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+                <xs:element name="IosMD5Hash" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <TESTE_ZPMF_MATCHCODE_LISTA_EQUI>
+    <ProcessFileName>TESTE_ZPMF_MATCHCODE_LISTA_EQUI.iff</ProcessFileName>
+    <FileName>TESTE_ZPMF_MATCHCODE_LISTA_EQUI.html</FileName>
+    <IconName>TESTE_ZPMF_MATCHCODE_LISTA_EQUI.png</IconName>
+    <LookupFileName />
+    <ShortDescription>TESTE ZPMF_MATCHCODE_LISTA_EQUI</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>ZPMF_MATCHCODE_LISTA_EQUI</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>1/22/2019 5:34:26 PM</CreatedDate>
+    <JSFileName>TESTE_ZPMF_MATCHCODE_LISTA_EQUI.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>0</FileExt>
+    <Field1>I_ANLNR</Field1>
+    <Field2>I_ANLNR</Field2>
+    <Default1>PublishDummyFolder</Default1>
+    <Default2>TESTE ZPMF_MATCHCODE_LISTA_EQUI-22012019033426.xls</Default2>
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>IsApplyConfiguration</IsApplyConfiguration>
+    <IsEasyWorkflow>IsEasyWorkflow</IsEasyWorkflow>
+    <IsSheet>IsSheet</IsSheet>
+    <IsFieldMap>IsFieldMap</IsFieldMap>
+    <Version>5.2.4</Version>
+    <IosMD5Hash>D3-DE-3D-B7-F6-7B-A7-BB-14-72-C4-93-00-C8-03-22</IosMD5Hash>
+  </TESTE_ZPMF_MATCHCODE_LISTA_EQUI>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>I_ANLNR</FieldFullName>
+    <FieldName />
+    <TabName>I_ANLNR</TabName>
+    <Description>Nº principal do imobilizado</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>I_EQKTX</FieldFullName>
+    <FieldName />
+    <TabName>I_EQKTX</TabName>
+    <Description>Denominação do objeto técnico</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>40</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>I_EQUNR</FieldFullName>
+    <FieldName />
+    <TabName>I_EQUNR</TabName>
+    <Description>Nº equipamento</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>18</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>true</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>4</FieldID>
+    <FieldFullName>I_INVNR</FieldFullName>
+    <FieldName />
+    <TabName>I_INVNR</TabName>
+    <Description>Nº inventário</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>25</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>true</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>5</FieldID>
+    <FieldFullName>I_IWERK</FieldFullName>
+    <FieldName />
+    <TabName>I_IWERK</TabName>
+    <Description>Centro de planejamento de manutenção</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+</NewDataSet>

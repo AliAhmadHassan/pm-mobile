@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <meta name="format-detection" content="telephone=no" />
+    <title> Pegar numero da Ordem de Manutenção </title>
+    <link href="../../../css/ProcessFile_New.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" id="PublishTheme" href="../../../Content/v145/BlueTheme.css" />
+    <link id="PublishDeviceSpecific" rel="stylesheet" href="#" />
+    <script type="text/javascript" src="../../../scripts/Managers/JavascriptManager.js"></script>
+    <script>
+        for (var i = 0; i < HeaderProcessFileScripts.length; i++) {
+            document.write("<script type='text/javascript' src='" + HeaderProcessFileScripts[i] + "?t=" + Date.now() + "'><\/script>");
+        }
+    </script>
+    <!-- <script type="text/javascript">         var isRun = window.sessionStorage.getItem(iwrIsAllowRunInMobile); if (isRun == null) { isRun = window.localStorage.getItem(iwrIsAllowRunInMobile); } isRun = (isRun == "true") ? true : false;username = window.sessionStorage.getItem(iwrUserName);if (username == null) {LogoutFromApp(); } else { $("#lblApplicationMode").show(); }         $(document).ready(function () {             SetDefaultSystem(); SetLogonShortCut(); var loNow = new Date(); $(".ProcessIconFile").attr("src", "../Icons/CAT2_Time_Sheet.png?time=" + loNow.getTime());        });    </script>-->
+</head>
+
+<body> <input id="hdntemplateversion" type="hidden" value="1.0" />
+    <div id="dvDisabled"> </div>
+    <div data-role="page" data-theme="c" id="" data-overlay-theme="b">
+        <div class="divTopBar"> &nbsp;</div>
+        <div id="MainPage">
+            <div class="header ui-bar-b">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="backbutton"> <a id="btnBack" href="#">                                <img src="../../../new_images/back.png" width="24" style="padding-top: 2px;" alt="" /></a> </td>
+                        <td class="titletop">
+                            <h1 id="title"> Pegar numero da Ordem de Manutenção </h1>
+                        </td>
+                        <td class="morebutton"> <a id="divOptions" href="#" class=" material-dropdown">                                <img src="../../../new_images/moretop.png" width="24" alt="" /></a> </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="divHeaderFix"> </div>
+            <div class="main">
+              <!--  <div class="btnDeafult" style="display: none;"> <a href="#" data-mini="true" data-role="button" data-icon="check" data-inline="true" style="display: none;" data-theme="b" itag="inserttestdata" value="Default Values">Default Values</a> </div> -->
+                <div class="btnDeafult" style="display: none;"> <a href="#" data-mini="true" data-role="button" data-icon="check" data-inline="true" style="display: block;" data-theme="b" itag="inserttestdata" value="Padrão">Padrão</a> </div>
+				<div>
+                    <form method="post" action="" id="Form20170506124951974" ifiletype="Data Extractor" itcode="CYAUPM" title="Pegar numero da Ordem de Manutenção"=" id=" Form20170506124951974 " ifiletype="Data Extractor " itcode="CYAUPM " title="Pegar numero da Ordem de Manutenção "" class="form-horizontal"> <input type="hidden" itag="detailtables" value="" /> <input type="hidden" itag="processfilename" value="Get_Equipment_Maintenance_Order_Numbers.ite" /> <input type="hidden" itag="returntables" value="" /> <input type="hidden" itag="pdataid" value="" /> <input type="hidden" itag="defiltertype" value="CustomFilter" />
+                        <!-- <div class="datacontent"> -->
+                        <!--HEADER-->
+                        <div class="datacontent">
+                            <div class="panel" itable="header">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"> Header</h3> <a href="#" class="ProcessFileArrow ProcessFileOpenArrow ui-link">                                    <img src="../../../new_images/next-b.png" width="20" alt="" style="padding: 8px;" /></a> </div>
+                                <div class="panel-body">
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none"> Numero do Equipamento</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="A" name="txt1" maxlength="18" irequired="true"/></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                </div>
+                            </div>
+                            <div class="clearing"> </div>
+                            <div itag="tblDataDE" style="margin-left:16px !important">
+                                <div style="overflow-y: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                    <table itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                        <thead class="ui-bar-b">
+                                            <tr>
+                                                <th imatno="AUFNR">Numero da Ordem</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearing"> </div>
+                        <div id="BannerDiv" style="display: none" class="btncontainer padding colorborderNew">
+                            <div> <img id="imgBanner" src="" style="width: 600px; height: 80px; float: left; display: none" /> </div>
+                        </div>
+                        <div class="ProcLogonShortcutContainer">
+                            <div class="ProcLogonShortcutTitle" style=""> <label class="lblProcLogonShortcut">                                Logon Shortcut                            </label> </div>
+                            <div class="LogonShortcutSelection">
+                                <div class="styled-select"> <select name="drpLogonShortcut" data-theme="b" class="drpProcLogonShortcut" id="drpLogonShortcut" data-native-menu="true">                                </select> </div> <a id="btnRefresh" class="reloadLogonShortcut ui-link ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" data-inline="true" data-role="button" data-theme="b" data-iconpos="notext" data-icon="refresh" role="button"></a>
+                                <div style="clear: both;"> </div>
+                            </div>
+                        </div>
+                        <div style="clear: both">
+                            <div itag="fldstResp" id="msg">
+                                <div itag="dvSapRetTab"> </div>
+                                <div itag="dvAction" class="colorborderNew padding"> </div>
+                                <div itag="dvMsg"> </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--END HEADER-->
+                    <!--FOOTER-->
+                    <!--END FOOTER-->
+                </div>
+            </div>
+            <div class="clearing"> </div>
+            <ul id="MenuAction" class="mfb-component--br mfb-zoomin" data-mfb-state="close">
+                <div class="FloatingButtonMenuDiv"> </div>
+                <li class="mfb-component__wrap"><a id="MainButton" href="#" class="mfb-component__button--main ui-bar-b">                    <img src="../../../new_images/ellipsis.png" alt="" class="mfb-component__main-icon--resting ion-plus-round" />                    <img src="../../../new_images/cross2.png" alt="" class="mfb-component__main-icon--active ion-close-round" />                </a>
+                    <ul class="mfb-component__list">
+                        <li><a formid="Form20170506124951974" id="sap" itag="btnSendToSAP" href="#" data-mfb-label="Pegar Numero da Ordem(s)" class="mfb-component__button--child ui-bar-d"><img src="../../../new_images/action-btn-sendtosap.png" alt="" class="mfb-component__child-icon ion-social-github" /></a></li>
+                        <!-- <li><a href="#" formid="Form20170506124951974" itag="btnReset" data-mfb-label="Resetar" class="mfb-component__button--child ui-bar-f"><img src="../../../new_images/action-btn-reset.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a></li> -->
+						<li><a formid="Form20170506124951974" id="reset" itag="btnSendToSAP" href="#" data-mfb-label="Resetar" class="mfb-component__button--child ui-bar-f"><img src="../../../new_images/action-btn-reset.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script>
+            ProcessFileScripts.push("../Js/Get_Equipment_Maintenance_Order_Numbers.js");
+            for (var i = 0; i < ProcessFileScripts.length; i++) {
+                document.write("<script type='text/javascript' src='" + ProcessFileScripts[i] + "?t=" + Date.now() + "'><\/script>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>

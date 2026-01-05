@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <title> Baixar e Atualizar Notificações </title>
+    <link href="../../../css/ProcessFile_New.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" id="PublishTheme" href="../../../Content/v145/BlueTheme.css" />
+    <link id="PublishDeviceSpecific" rel="stylesheet" href="#" />
+    <script type="text/javascript" src="../../../scripts/Managers/JavascriptManager.js"></script>
+    <script>
+        for (var i = 0; i < HeaderProcessFileScripts.length; i++) {
+            document.write("<script type='text/javascript' src='" + HeaderProcessFileScripts[i] + "?t=" + Date.now() + "'><\/script>");
+        }
+    </script>
+    <!-- <script type="text/javascript">         var isRun = window.sessionStorage.getItem(iwrIsAllowRunInMobile); if (isRun == null) { isRun = window.localStorage.getItem(iwrIsAllowRunInMobile); } isRun = (isRun == "true") ? true : false;username = window.sessionStorage.getItem(iwrUserName);if (username == null) {LogoutFromApp(); } else { $("#lblApplicationMode").show(); }         $(document).ready(function () {             SetDefaultSystem(); SetLogonShortCut(); var loNow = new Date(); $(".ProcessIconFile").attr("src", "../Icons/CAT2_Time_Sheet.png?time=" + loNow.getTime());        });    </script>-->
+</head>
+
+<body> <input id="hdntemplateversion" type="hidden" value="1.0" />
+    <div id="dvDisabled"> </div>
+    <div data-role="page" data-theme="c" id="" data-overlay-theme="b">
+        <div class="divTopBar"> &nbsp;</div>
+        <div id="MainPage">
+            <div class="header ui-bar-b">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="backbutton">
+                            <a id="btnBack" href="#"> <img src="../../../new_images/back.png" width="24" style="padding-top: 2px;" alt="" /></a>
+                        </td>
+                        <td class="titletop">
+                            <h1 id="title"> Baixar e Atualizar Notificações </h1>
+                        </td>
+                        <td class="morebutton">
+                            <a id="divOptions" href="#" class=" material-dropdown"> <img src="../../../new_images/moretop.png" width="24" alt="" /></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="divHeaderFix"> </div>
+            <div class="main">
+                <div class="btnDeafult" style="display: none;"> <a href="#" data-mini="true" data-role="button" data-icon="check" data-inline="true" style="display: block;" data-theme="b" itag="inserttestdata" value="Padrão">Padrão</a> </div>
+                <div>
+                    <form method="post" action="" id="Form20161012060531190" ifiletype="Transaction" itcode="IW23" title="Baixar e Atualizar Notificações"=" id=" Form20170204115600134 " ifiletype="Transaction " itcode="IW23 " title="Baixar e Atualizar Notificações "" class="form-horizontal"> <input type="hidden" itag="detailtables" value="" /> <input type="hidden" itag="processfilename" value="IW23_Download_Notification_In_Portuguese.itf" /> <input type="hidden" itag="returntables" value="" /> <input type="hidden" itag="pdataid" value="" />
+                        <!-- <div class="datacontent"> -->
+                        <!--HEADER-->
+                        <div class="datacontent">
+                            <div class="panel" itable="header">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"> Cabeçalho</h3>
+                                    <a href="#" class="ProcessFileArrow ProcessFileOpenArrow ui-link"> <img src="../../../new_images/next-b.png" width="20" alt="" style="padding: 8px;" /></a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+										<label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Número de notificação</label>
+										
+										<div  class="col-sm-3">
+										<div class="col-sm-3" style="margin-left:-5px;"><input data-role="none" class="form-control input-sm" type="text" style="margin-top: 0.5em;"imapvalue="A" name="txt1" irequired="true" maxlength="12" /></div>
+										<a formid="Form20161012060531190" itag="btnSendToSAP" data-role="none" data-inline="true" width="270" data-mini="true" data-theme="b" id="btnPreview" value="Preview"  class="ui-link ui-btn ui-btn-b ui-btn-inline " role="button"> Baixar detalhes da Notificação </a>
+										</div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                </div>
+                            </div>
+                            <div class="clearing"> </div>
+                            <div class="panel" style="display:none">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">SAP Return Fields/Tables</h3>
+                                    <a href="#" class="ProcessFileArrow ProcessFileOpenArrow ui-link">
+                                        <div class="ImgNextArrow"></div>
+                                    </a>
+                                </div>
+                                <div class="panel-body" itable="tblDownloadedData">
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Planner Group for Customer Service and Plant Maintenance</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="B" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Maintenance Planning Plant</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="C" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Main work center for maintenance tasks</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="D" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Plant</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="E" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">System Status</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="F" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Proirity</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="G" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Breakdown Indicator</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="I" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Required start date</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="H" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Start of Malfunction (Time)</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="K" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Start of Malfunction (Date)</label>
+                                        <div class="col-sm-6"><input type="text" data-role="none" class="form-control input-sm" imapvalue="J" style="width: 150px;" class="form-control" maxlength=20 readonly="readonly" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearing"> </div>
+                        <div id="BannerDiv" style="display: none" class="btncontainer padding colorborderNew">
+                            <div> <img id="imgBanner" src="" style="width: 600px; height: 80px; float: left; display: none" /> </div>
+                        </div>
+                        <!-- <div class="ProcLogonShortcutContainer"> -->
+                            <!-- <div class="ProcLogonShortcutTitle" style=""> <label class="lblProcLogonShortcut">                                Logon Shortcut                            </label> </div> -->
+                            <!-- <div class="LogonShortcutSelection"> -->
+                                <!-- <div class="styled-select"> <select name="drpLogonShortcut" data-theme="b" class="drpProcLogonShortcut" id="drpLogonShortcut" data-native-menu="true">                                </select> </div> -->
+                                <!-- <a id="btnRefresh" class="reloadLogonShortcut ui-link ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" data-inline="true" data-role="button" data-theme="b" data-iconpos="notext" data-icon="refresh" role="button"></a> -->
+                                <!-- <div style="clear: both;"> </div> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div style="clear: both"> -->
+                            <!-- <div itag="fldstResp"> -->
+                                <!-- <div itag="dvSapRetTab"> </div> -->
+                                <!-- <div itag="dvAction" class="colorborderNew padding"> </div> -->
+                                <!-- <div itag="dvMsg"> </div> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </form>
+					
+					
+					<form method="post" action="" id="Form20161013145139055" ifiletype="Transaction" itcode="IW22" title="IW22_Update_Notification_In_Portuguese_V2" id=" Form20170204121455660 " ifiletype="Transaction " itcode="IW22 " class="form-horizontal" style="display:none"> <input type="hidden" itag="detailtables" value="" /> <input type="hidden" itag="processfilename" value="IW22_Update_Notification_In_Portuguese_V2.itf" /> <input type="hidden" itag="returntables" value="" /> <input type="hidden" itag="pdataid" value="" />
+                        <!-- <div class="datacontent"> -->
+                        <!--HEADER-->
+                        <div class="datacontent" >
+                            <div class="panel" itable="header" >
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"> Cabeçalho</h3>
+                                    <a href="#" class="ProcessFileArrow ProcessFileOpenArrow ui-link"> <img src="../../../new_images/next-b.png" width="20" alt="" style="padding: 8px;" /></a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Número de notificação</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="A" name="txt1" maxlength="12" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">PGrupo planejador atendimento ao cliente e manutenção de planta</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="B" name="txt2" maxlength="3" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Planejamento de manutenção de planta</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="C" name="txt3" maxlength="4" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Centro de trabalho principal para serviço de manutenção</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="D" name="txt4" maxlength="8" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Planta</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="E" name="txt5" maxlength="4" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Prioridade</label>
+                                        <div class="col-sm-3"><input data-role="none" class="form-control input-sm" type="text" imapvalue="F" name="txt6" maxlength="1" style="display:none"/>
+										
+										<select id="lstPriority1" style="height: 20px"> 
+											<option value="" label=""></option>
+											<option value="0" >Agencia</option>
+											<option value="1" >Muito elevado</option>
+											<option value="2" >Elevado</option>
+											<option value="3" >Medio</option>
+											<option value="4" >Baixo</option>
+										</select>	
+										
+										</div>
+                                    </div>
+                                    <div class="clearing"></div>                                    
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Data de inicio requerido</label>
+                                        <div class="col-sm-6">
+										<!-- <input class="txtDate form-control input-sm" data-options='{"useClearButton": true, "mode": "flipbox"}' type="date" maxlength="12" imapvalue="G" name="txt7" data-role="datebox" value="" /> -->
+										<input class="form-control input-sm dateformatter" data-date="" data-date-format="MM/DD/YYYY" type="date" maxlength="12" imapvalue="G" name="txt7" data-role="none" value="" />
+										</div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Hora do mau funcionamento(Hora)</label>
+                                        <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="J" name="txt10" maxlength="8" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <div class="form-group"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Inicio de mau funcionamento(Data)</label>
+                                        <div class="col-sm-6">
+										<!-- <input class="txtDate form-control input-sm" data-options='{"useClearButton": true, "mode": "flipbox"}' type="date" maxlength="12" imapvalue="I" name="txt9" data-role="datebox" value="" /> -->
+										<input class="form-control input-sm dateformatter" data-date="" data-date-format="MM/DD/YYYY" type="date" maxlength="12" imapvalue="I" name="txt9" data-role="none" value="" />
+										</div>
+                                    </div>
+                                    <div class="clearing"></div>
+									<div class="form-group">
+										<label style="display:none"class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Indicador de avaria</label>
+                                       <div class="col-sm-6"><input data-role="none" class="form-control input-sm" type="text" imapvalue="H" name="txt8" maxlength="1" style="display:none" />										
+											<input data-theme="c" type="checkbox" id="breakdown"/>
+											<label style="float:left;margin-top:7px">Indicador de avaria</label>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearing"> </div>
+                        </div>
+                        <div class="clearing"> </div>
+                        <div id="BannerDiv" style="display: none" class="btncontainer padding colorborderNew">
+                            <div> <img id="imgBanner" src="" style="width: 600px; height: 80px; float: left; display: none" /> </div>
+                        </div>
+                        <div class="ProcLogonShortcutContainer">
+                            <div class="ProcLogonShortcutTitle" style=""> <label class="lblProcLogonShortcut">                                Atalho de Logon                           </label> </div>
+                            <div class="LogonShortcutSelection">
+                                <div class="styled-select"> <select name="drpLogonShortcut" data-theme="b" class="drpProcLogonShortcut" id="drpLogonShortcut" data-native-menu="true">                                </select> </div>
+                                <a id="btnRefresh" class="reloadLogonShortcut ui-link ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" data-inline="true" data-role="button" data-theme="b" data-iconpos="notext" data-icon="refresh" role="button"></a>
+                                <div style="clear: both;"> </div>
+                            </div>
+                        </div>
+                        <div style="clear: both">
+                            <div itag="fldstResp">
+                                <div itag="dvSapRetTab"> </div>
+                                <div itag="dvAction" class="colorborderNew padding"> </div>
+                                <div itag="dvMsg"> </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--END HEADER-->
+                    <!--FOOTER-->
+                    <!--END FOOTER-->
+                </div>
+            </div>
+            <div class="clearing"> </div>
+          <div class="ProcLogonShortcutContainer">
+				<div class="ProcLogonShortcutTitle" style=""> <label class="lblProcLogonShortcut">                               Atalho de Logon                          </label> </div>
+				<div class="LogonShortcutSelection">
+					<div class="styled-select"> <select name="drpLogonShortcut" data-theme="b" class="drpProcLogonShortcut" id="drpLogonShortcut" data-native-menu="true">                                </select> </div>
+					<a id="btnRefresh" class="reloadLogonShortcut ui-link ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" data-inline="true" data-role="button" data-theme="b" data-iconpos="notext" data-icon="refresh" role="button"></a>
+					<div style="clear: both;"> </div>
+				</div>
+			</div>
+            <ul id="MenuAction" class="mfb-component--br mfb-zoomin" data-mfb-state="close" style="display:none">
+                <div class="FloatingButtonMenuDiv"> </div>
+                <li class="mfb-component__wrap">
+                    <a id="MainButton" href="#" class="mfb-component__button--main ui-bar-b"> <img src="../../../new_images/ellipsis.png" alt="" class="mfb-component__main-icon--resting ion-plus-round" /> <img src="../../../new_images/cross2.png" alt="" class="mfb-component__main-icon--active ion-close-round" /> </a>
+                    <ul class="mfb-component__list">
+                        <li>
+                            <a formid="Form20161013145139055" itag="btnSendToSAP" id="SendtoSAP" href="#" data-mfb-label="Atualizar Notificação" class="mfb-component__button--child ui-bar-d"><img src="../../../new_images/action-btn-sendtosap.png" alt="" class="mfb-component__child-icon ion-social-github" /></a>							
+                        </li>
+                        <!-- <li> -->
+                            <!-- <a href="#" formid="Form20161013145139055" itag="btnTest" data-mfb-label="Test" class="mfb-component__button--child ui-bar-d"><img src="../../../new_images/action-btn-test.png" alt="" class="mfb-component__child-icon ion-social-octocat" /></a> -->
+                        <!-- </li> -->
+                        <!-- <li> -->
+                            <!-- <a href="#" formid="Form20161013145139055" itag="btnSendForReview" data-mfb-label="Send for Review" class="mfb-component__button--child ui-bar-e"><img src="../../../new_images/action-btn-test.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a> -->
+                        <!-- </li> -->
+                        <!-- <li> -->
+                            <!-- <a href="#" formid="Form20161013145139055" itag="btnSave" data-mfb-label="Save" class="mfb-component__button--child ui-bar-b"><img src="../../../new_images/action-btn-save.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a> -->
+                        <!-- </li> -->
+                        <!-- <li style='display:none;'> -->
+                            <!-- <a href="#" formid="Form20161013145139055" itag="btnDelete" data-mfb-label="Delete" class="mfb-component__button--child ui-bar-f"><img src="../../../new_images/action-btn-delete.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a> -->
+                        <!-- </li> -->
+                        <li>
+                            <a href="#" formid="Form20161013145139055" itag="btnReset" data-mfb-label="Resetar" class="mfb-component__button--child ui-bar-f"><img src="../../../new_images/action-btn-reset.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="../Js/IW23_Download_Notification_In_Portuguese.js?t=4256762552"></script>
+        <script>
+            for (var i = 0; i < ProcessFileScripts.length; i++) {
+                document.write("<script type='text/javascript' src='" + ProcessFileScripts[i] + "?t=" + Date.now() + "'><\/script>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>

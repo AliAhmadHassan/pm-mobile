@@ -1,0 +1,927 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="IW22_NOTIF_DATA_MODIFY">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <IW22_NOTIF_DATA_MODIFY>
+    <ProcessFileName>IW22_NOTIF_DATA_MODIFY.iff</ProcessFileName>
+    <FileName>IW22_NOTIF_DATA_MODIFY.html</FileName>
+    <IconName>IW22_NOTIF_DATA_MODIFY.png</IconName>
+    <LookupFileName />
+    <ShortDescription>IW22_NOTIF_DATA_MODIFY</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>BAPI_ALM_NOTIF_DATA_MODIFY </ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>4/8/2019 7:55:38 PM</CreatedDate>
+    <JSFileName>IW22_NOTIF_DATA_MODIFY.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>0</FileExt>
+    <Field1>EQUIPMENT</Field1>
+    <Field2>EQUIPMENT</Field2>
+    <Default1>PublishDummyFolder</Default1>
+    <Default2>IW22_NOTIF_DATA_MODIFY-08042019045539.xls</Default2>
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>IsApplyConfiguration</IsApplyConfiguration>
+    <IsEasyWorkflow>IsEasyWorkflow</IsEasyWorkflow>
+    <IsSheet>IsSheet</IsSheet>
+    <IsFieldMap>IsFieldMap</IsFieldMap>
+    <Version>5.2.7</Version>
+    <IosFileHash>4B-40-A3-21-00-7A-8D-B4-D4-A5-4C-89-1E-A3-5B-D7-75-00-40-56-39-4C-BD-3C-58-AE-09-DA-D0-48-23-6F-17-8A-CB-53-0F-00-01-10-43-0B-74-6C-5B-45-9C-B9-9E-F4-28-1A-9A-A4-8C-75-D4-9E-3D-80-2D-3B-A1-86</IosFileHash>
+  </IW22_NOTIF_DATA_MODIFY>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>EQUIPMENT</FieldFullName>
+    <FieldName />
+    <TabName>EQUIPMENT</TabName>
+    <Description>Nº equipamento</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>18</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>FUNCT_LOC</FieldFullName>
+    <FieldName />
+    <TabName>FUNCT_LOC</TabName>
+    <Description>Local de instalação</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>30</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>SHORT_TEXT</FieldFullName>
+    <FieldName />
+    <TabName>SHORT_TEXT</TabName>
+    <Description>Texto breve da nota</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>40</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>4</FieldID>
+    <FieldFullName>BREAKDOWN</FieldFullName>
+    <FieldName />
+    <TabName>BREAKDOWN</TabName>
+    <Description>Parada?</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>5</FieldID>
+    <FieldFullName>STRMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNDATE</TabName>
+    <Description>Data de Início de Avaria</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>6</FieldID>
+    <FieldFullName>STRMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNTIME</TabName>
+    <Description>Hora de Início de Avaria</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>5</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>7</FieldID>
+    <FieldFullName>ENDMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNDATE</TabName>
+    <Description>Data Fim de Avaria</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>6</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>8</FieldID>
+    <FieldFullName>ENDMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNTIME</TabName>
+    <Description>Hora Fim de Avaria</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>7</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>9</FieldID>
+    <FieldFullName>EQUIPMENT</FieldFullName>
+    <FieldName />
+    <TabName>EQUIPMENT</TabName>
+    <Description>Nº equipamento_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>8</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>10</FieldID>
+    <FieldFullName>FUNCT_LOC</FieldFullName>
+    <FieldName />
+    <TabName>FUNCT_LOC</TabName>
+    <Description>Local de instalação_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>9</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>11</FieldID>
+    <FieldFullName>SHORT_TEXT</FieldFullName>
+    <FieldName />
+    <TabName>SHORT_TEXT</TabName>
+    <Description>Texto breve da nota_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>10</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>12</FieldID>
+    <FieldFullName>BREAKDOWN</FieldFullName>
+    <FieldName />
+    <TabName>BREAKDOWN</TabName>
+    <Description>Parada?_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>11</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>13</FieldID>
+    <FieldFullName>STRMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNDATE</TabName>
+    <Description>Data de Início de Avaria_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>12</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>14</FieldID>
+    <FieldFullName>STRMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNTIME</TabName>
+    <Description>Hora de Início de Avaria_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>13</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>15</FieldID>
+    <FieldFullName>ENDMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNDATE</TabName>
+    <Description>Data Fim de Avaria_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>14</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>16</FieldID>
+    <FieldFullName>ENDMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNTIME</TabName>
+    <Description>Hora Fim de Avaria_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>15</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>17</FieldID>
+    <FieldFullName>NUMBER</FieldFullName>
+    <FieldName />
+    <TabName>NUMBER</TabName>
+    <Description>Nota</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>16</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>18</FieldID>
+    <FieldFullName>ACT_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ACT_KEY</TabName>
+    <Description>Nº Atividade</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>19</FieldID>
+    <FieldFullName>ACTTEXT</FieldFullName>
+    <FieldName />
+    <TabName>ACTTEXT</TabName>
+    <Description>TXT da atividade</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>40</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>20</FieldID>
+    <FieldFullName>ACT_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>ACT_CODEGRP</TabName>
+    <Description>Grp.Códigos Ação</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>8</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>21</FieldID>
+    <FieldFullName>ACT_CODE</FieldFullName>
+    <FieldName />
+    <TabName>ACT_CODE</TabName>
+    <Description>Code da Ação</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>22</FieldID>
+    <FieldFullName>START_DATE</FieldFullName>
+    <FieldName />
+    <TabName>START_DATE</TabName>
+    <Description>Data de Início</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>23</FieldID>
+    <FieldFullName>START_TIME</FieldFullName>
+    <FieldName />
+    <TabName>START_TIME</TabName>
+    <Description>Hora de Início</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>5</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>24</FieldID>
+    <FieldFullName>END_DATE</FieldFullName>
+    <FieldName />
+    <TabName>END_DATE</TabName>
+    <Description>Data fim</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>6</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>25</FieldID>
+    <FieldFullName>END_TIME</FieldFullName>
+    <FieldName />
+    <TabName>END_TIME</TabName>
+    <Description>Hora fim</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>7</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>26</FieldID>
+    <FieldFullName>ACT_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ACT_KEY</TabName>
+    <Description>Nº Atividade_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>8</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>27</FieldID>
+    <FieldFullName>ACTTEXT</FieldFullName>
+    <FieldName />
+    <TabName>ACTTEXT</TabName>
+    <Description>TXT da atividade_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>9</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>28</FieldID>
+    <FieldFullName>ACT_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>ACT_CODEGRP</TabName>
+    <Description>Grp.Códigos Ação_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>10</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>29</FieldID>
+    <FieldFullName>ACT_CODE</FieldFullName>
+    <FieldName />
+    <TabName>ACT_CODE</TabName>
+    <Description>Code da Ação_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>11</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>30</FieldID>
+    <FieldFullName>START_DATE</FieldFullName>
+    <FieldName />
+    <TabName>START_DATE</TabName>
+    <Description>Data de Início_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>12</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>31</FieldID>
+    <FieldFullName>START_TIME</FieldFullName>
+    <FieldName />
+    <TabName>START_TIME</TabName>
+    <Description>Hora de Início_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>13</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>32</FieldID>
+    <FieldFullName>END_DATE</FieldFullName>
+    <FieldName />
+    <TabName>END_DATE</TabName>
+    <Description>Data fim_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>14</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>33</FieldID>
+    <FieldFullName>END_TIME</FieldFullName>
+    <FieldName />
+    <TabName>END_TIME</TabName>
+    <Description>Hora fim_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>15</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>34</FieldID>
+    <FieldFullName>CAUSE_KEY</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_KEY</TabName>
+    <Description>Numero de causa</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>16</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>35</FieldID>
+    <FieldFullName>CAUSE_SORT_NO</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_SORT_NO</TabName>
+    <Description>Nº ordenação</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>17</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>36</FieldID>
+    <FieldFullName>ITEM_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_KEY</TabName>
+    <Description>Nº item</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>18</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>37</FieldID>
+    <FieldFullName>CAUSETEXT</FieldFullName>
+    <FieldName />
+    <TabName>CAUSETEXT</TabName>
+    <Description>Texto da Causa</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>40</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>19</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>38</FieldID>
+    <FieldFullName>CAUSE_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_CODEGRP</TabName>
+    <Description>Grp.Códigos Causas</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>8</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>20</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>39</FieldID>
+    <FieldFullName>CAUSE_CODE</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_CODE</TabName>
+    <Description>Code da Causa</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>21</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>40</FieldID>
+    <FieldFullName>CAUSE_KEY</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_KEY</TabName>
+    <Description>Numero de causa_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>22</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>41</FieldID>
+    <FieldFullName>ITEM_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_KEY</TabName>
+    <Description>Nº item_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>23</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>42</FieldID>
+    <FieldFullName>CAUSE_SORT_NO</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_SORT_NO</TabName>
+    <Description>Nº ordenação_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>24</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>43</FieldID>
+    <FieldFullName>CAUSETEXT</FieldFullName>
+    <FieldName />
+    <TabName>CAUSETEXT</TabName>
+    <Description>Texto da Causa_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>25</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>44</FieldID>
+    <FieldFullName>CAUSE_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_CODEGRP</TabName>
+    <Description>Grp.Códigos Causas_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>26</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>45</FieldID>
+    <FieldFullName>CAUSE_CODE</FieldFullName>
+    <FieldName />
+    <TabName>CAUSE_CODE</TabName>
+    <Description>Code da Causa_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>27</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>46</FieldID>
+    <FieldFullName>ITEM_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_KEY</TabName>
+    <Description>Nº item no registro do item</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>28</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>47</FieldID>
+    <FieldFullName>ITEM_SORT_NO</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_SORT_NO</TabName>
+    <Description>Nº ordenação para o item</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>29</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>48</FieldID>
+    <FieldFullName>DESCRIPT</FieldFullName>
+    <FieldName />
+    <TabName>DESCRIPT</TabName>
+    <Description>Texto breve referente ao item da nota</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>40</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>30</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>49</FieldID>
+    <FieldFullName>D_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>D_CODEGRP</TabName>
+    <Description>Grp.Códigos Defeitos</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>8</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>31</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>50</FieldID>
+    <FieldFullName>D_CODE</FieldFullName>
+    <FieldName />
+    <TabName>D_CODE</TabName>
+    <Description>Tipo Defeito</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>32</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>51</FieldID>
+    <FieldFullName>DL_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>DL_CODEGRP</TabName>
+    <Description>Grp.Códigos Partes</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>8</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>33</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>52</FieldID>
+    <FieldFullName>DL_CODE</FieldFullName>
+    <FieldName />
+    <TabName>DL_CODE</TabName>
+    <Description>Parte do objeto</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>34</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>53</FieldID>
+    <FieldFullName>ITEM_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_KEY</TabName>
+    <Description>Nº item no registro do item_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>35</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>54</FieldID>
+    <FieldFullName>ITEM_SORT_NO</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_SORT_NO</TabName>
+    <Description>Nº ordenação para o item_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>36</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>55</FieldID>
+    <FieldFullName>DESCRIPT</FieldFullName>
+    <FieldName />
+    <TabName>DESCRIPT</TabName>
+    <Description>Info modificação p/respectivo campo dados utilização</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>37</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>56</FieldID>
+    <FieldFullName>D_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>D_CODEGRP</TabName>
+    <Description>Grp.Códigos Defeitos_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>38</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>57</FieldID>
+    <FieldFullName>D_CODE</FieldFullName>
+    <FieldName />
+    <TabName>D_CODE</TabName>
+    <Description>Tipo Defeito_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>39</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>58</FieldID>
+    <FieldFullName>DL_CODEGRP</FieldFullName>
+    <FieldName />
+    <TabName>DL_CODEGRP</TabName>
+    <Description>Grp.Códigos Partes_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>40</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>59</FieldID>
+    <FieldFullName>DL_CODE</FieldFullName>
+    <FieldName />
+    <TabName>DL_CODE</TabName>
+    <Description>Parte do objeto_X</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>41</SrNo>
+  </SAPFields>
+</NewDataSet>

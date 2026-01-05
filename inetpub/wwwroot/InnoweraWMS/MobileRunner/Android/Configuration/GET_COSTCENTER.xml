@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="GET_COSTCENTER">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidMD5Hash" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sequence" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:string" minOccurs="0" />
+                <xs:element name="isActive" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <GET_COSTCENTER>
+    <ProcessFileName>GET_COSTCENTER.ite</ProcessFileName>
+    <FileName>GET_COSTCENTER.html</FileName>
+    <IconName>GET_COSTCENTER.png</IconName>
+    <LookupFileName />
+    <ShortDescription>GET_COSTCENTER</ShortDescription>
+    <LongDescription />
+    <ProcessType>Data Extractor</ProcessType>
+    <ProcessCode>CSKS</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>2/27/2019 1:19:22 PM</CreatedDate>
+    <JSFileName>GET_COSTCENTER.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>0</FileExt>
+    <Default1>PublishDummyFolder</Default1>
+    <Default2>GET_COSTCENTER-27022019101922.xls</Default2>
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>IsApplyConfiguration</IsApplyConfiguration>
+    <IsEasyWorkflow>IsEasyWorkflow</IsEasyWorkflow>
+    <IsSheet>IsSheet</IsSheet>
+    <IsFieldMap>IsFieldMap</IsFieldMap>
+    <Version>5.2.4</Version>
+    <AndroidMD5Hash>5B-3B-6B-0D-FB-C0-9A-00-78-66-CD-AA-D5-F6-DC-52</AndroidMD5Hash>
+  </GET_COSTCENTER>
+  <DEFields>
+    <Sequence>0</Sequence>
+    <FieldName>KOKRS</FieldName>
+    <FieldDescription>Área de contabilidade de custos</FieldDescription>
+    <FieldLength>4</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>1</Sequence>
+    <FieldName>KOSTL</FieldName>
+    <FieldDescription>Centro de custo</FieldDescription>
+    <FieldLength>10</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>2</Sequence>
+    <FieldName>DATBI</FieldName>
+    <FieldDescription>Data de validade final</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>3</Sequence>
+    <FieldName>VERAK</FieldName>
+    <FieldDescription>Responsável</FieldDescription>
+    <FieldLength>20</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+</NewDataSet>

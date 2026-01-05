@@ -1,0 +1,238 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="EKKO">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sequence" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:string" minOccurs="0" />
+                <xs:element name="isActive" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <EKKO>
+    <ProcessFileName>EKKO.ite</ProcessFileName>
+    <FileName>EKKO.html</FileName>
+    <WebIconName>EKKO.png</WebIconName>
+    <MobileIconName>EKKO.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>EKKO</ShortDescription>
+    <LongDescription />
+    <ProcessType>Data Extractor</ProcessType>
+    <ProcessCode>EKKO</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>8/14/2019 12:16:54 PM</CreatedDate>
+    <JSFileName>EKKO.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>3C-90-97-8B-5F-01-0A-66-E1-42-C9-4E-64-12-7D-AD-BB-FD-F8-8E-F1-83-03-D0-36-F3-66-59-51-F2-4C-3B-AE-CD-7D-C0-3C-26-FE-EB-E0-80-20-83-08-B4-DB-4E-CE-B6-DF-16-1F-53-65-98-C2-FA-05-09-7F-DA-60-2B</WebFileHash>
+    <IosFileHash>F8-00-1B-A6-6C-EC-63-98-A5-60-6F-A1-06-25-03-08-36-44-23-6B-32-1D-BD-50-4D-56-4C-EA-7D-D5-BA-C3-0B-C8-DE-79-D7-3B-74-58-85-59-22-FE-F2-2F-22-A5-80-44-11-B1-08-D1-9C-44-8E-38-78-C2-D2-7B-67-10</IosFileHash>
+    <AndroidFileHash>0A-D1-E3-E8-FD-94-98-3C-DD-79-C0-6A-E8-9C-45-4C-06-62-BA-C6-8C-21-31-C7-56-62-58-5F-74-B5-D6-08-F0-0A-4F-34-A4-19-7A-86-83-3C-68-8B-82-50-FD-F7-55-F3-C2-C3-2A-5B-7E-87-7C-10-46-04-11-25-79-73</AndroidFileHash>
+    <Version>5.2.10</Version>
+  </EKKO>
+  <DEFields>
+    <Sequence>0</Sequence>
+    <FieldName>EBELN</FieldName>
+    <FieldDescription>EBELN</FieldDescription>
+    <FieldLength>10</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>1</Sequence>
+    <FieldName>BSART</FieldName>
+    <FieldDescription>BSART</FieldDescription>
+    <FieldLength>4</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>2</Sequence>
+    <FieldName>PINCR</FieldName>
+    <FieldDescription>PINCR</FieldDescription>
+    <FieldLength>5</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>3</Sequence>
+    <FieldName>LIFNR</FieldName>
+    <FieldDescription>LIFNR</FieldDescription>
+    <FieldLength>10</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>4</Sequence>
+    <FieldName>EKGRP</FieldName>
+    <FieldDescription>EKGRP</FieldDescription>
+    <FieldLength>3</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>5</Sequence>
+    <FieldName>BEDAT</FieldName>
+    <FieldDescription>BEDAT</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>6</Sequence>
+    <FieldName>KDATB</FieldName>
+    <FieldDescription>KDATB</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>7</Sequence>
+    <FieldName>KDATE</FieldName>
+    <FieldDescription>KDATE</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>8</Sequence>
+    <FieldName>KTWRT</FieldName>
+    <FieldDescription>KTWRT</FieldDescription>
+    <FieldLength>8.2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>9</Sequence>
+    <FieldName>UNSEZ</FieldName>
+    <FieldDescription>UNSEZ</FieldDescription>
+    <FieldLength>12</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>10</Sequence>
+    <FieldName>ZZSTATUS_CONTRATO</FieldName>
+    <FieldDescription>ZZSTATUS_CONTRATO</FieldDescription>
+    <FieldLength>2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>11</Sequence>
+    <FieldName>ZMM_VALIDADE_FIM</FieldName>
+    <FieldDescription>ZMM_VALIDADE_FIM</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>12</Sequence>
+    <FieldName>ZMM_VALOR_FIX</FieldName>
+    <FieldDescription>ZMM_VALOR_FIX</FieldDescription>
+    <FieldLength>8.2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>13</Sequence>
+    <FieldName>ZZVALOR_REAJUSTE</FieldName>
+    <FieldDescription>ZZVALOR_REAJUSTE</FieldDescription>
+    <FieldLength>8.2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>14</Sequence>
+    <FieldName>ZZDT_BASE_RC</FieldName>
+    <FieldDescription>ZZDT_BASE_RC</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>15</Sequence>
+    <FieldName>ZZTP_CONTRATACAO</FieldName>
+    <FieldDescription>ZZTP_CONTRATACAO</FieldDescription>
+    <FieldLength>2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>16</Sequence>
+    <FieldName>ZZDT_CONTRATO</FieldName>
+    <FieldDescription>ZZDT_CONTRATO</FieldDescription>
+    <FieldLength>8</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>17</Sequence>
+    <FieldName>ZZMATRICULA_CEI</FieldName>
+    <FieldDescription>ZZMATRICULA_CEI</FieldDescription>
+    <FieldLength>20</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>18</Sequence>
+    <FieldName>ZZVL_ORIGINAL_CTR</FieldName>
+    <FieldDescription>ZZVL_ORIGINAL_CTR</FieldDescription>
+    <FieldLength>8.2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>19</Sequence>
+    <FieldName>ZZGARANTIA</FieldName>
+    <FieldDescription>ZZGARANTIA</FieldDescription>
+    <FieldLength>1</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+</NewDataSet>

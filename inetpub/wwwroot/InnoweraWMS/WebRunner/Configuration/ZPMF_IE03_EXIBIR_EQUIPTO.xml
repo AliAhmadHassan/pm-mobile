@@ -1,0 +1,121 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ZPMF_IE03_EXIBIR_EQUIPTO">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ZPMF_IE03_EXIBIR_EQUIPTO>
+    <ProcessFileName>ZPMF_IE03_EXIBIR_EQUIPTO.iff</ProcessFileName>
+    <FileName>ZPMF_IE03_EXIBIR_EQUIPTO.html</FileName>
+    <WebIconName>ZPMF_IE03_EXIBIR_EQUIPTO.png</WebIconName>
+    <MobileIconName>ZPMF_IE03_EXIBIR_EQUIPTO.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>ZPMF_IE03_EXIBIR_EQUIPTO</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>ZPMF_IE03_EXIBIR_EQUIPTO</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>3/15/2019 11:07:13 PM</CreatedDate>
+    <JSFileName>ZPMF_IE03_EXIBIR_EQUIPTO.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>I_EQUIPMENT</Field1>
+    <Field2>I_EQUIPMENT</Field2>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>1C-94-A5-E0-2C-E3-F5-D0-E3-27-30-67-FF-49-3B-8A-BD-E8-52-F2-D2-E6-7B-9D-15-73-07-03-F9-7D-76-81-5C-A7-10-AD-7C-9F-FA-64-27-00-31-0F-A1-2C-85-3D-3C-11-41-E9-E6-70-CB-D6-66-C8-46-68-70-F3-30-B8</WebFileHash>
+    <IosFileHash>FE-00-31-49-51-6C-4E-21-8F-5D-29-58-B5-EC-2E-87-FF-F2-6B-CE-12-36-67-8E-A9-67-08-DE-7D-CA-87-D8-39-F8-66-40-55-F5-4A-EE-E8-F1-9D-4B-04-0B-F7-ED-10-57-47-BB-1A-75-F5-D1-97-C2-2C-84-1C-E0-6B-EA</IosFileHash>
+    <AndroidFileHash>65-EA-08-B8-AE-D2-4B-0C-A1-57-4D-87-16-C0-1A-1D-9D-62-17-E0-54-5F-2A-BB-6B-54-33-60-89-B9-FE-B5-8B-5E-AE-23-5E-99-77-C0-65-8E-21-EA-5C-E6-7C-A0-F3-6D-A7-26-A8-7B-01-8F-D6-4A-5D-D0-8D-0B-CB-E2</AndroidFileHash>
+    <Version>5.2.7</Version>
+  </ZPMF_IE03_EXIBIR_EQUIPTO>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>I_EQUIPMENT</FieldFullName>
+    <FieldName />
+    <TabName>I_EQUIPMENT</TabName>
+    <Description>Nº equipamento</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>18</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+</NewDataSet>

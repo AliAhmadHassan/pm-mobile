@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="IW22_NOTIF_DATA_DELETE_ITEM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <IW22_NOTIF_DATA_DELETE_ITEM>
+    <ProcessFileName>IW22_NOTIF_DATA_DELETE_ITEM.iff</ProcessFileName>
+    <FileName>IW22_NOTIF_DATA_DELETE_ITEM.html</FileName>
+    <WebIconName>IW22_NOTIF_DATA_DELETE_ITEM.jpg</WebIconName>
+    <MobileIconName>IW22_NOTIF_DATA_DELETE_ITEM.jpg</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>IW22_NOTIF_DATA_DELETE_ITEM</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>ZPMF_NOTIF_DATA_DELETE</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>5/16/2019 8:07:35 PM</CreatedDate>
+    <JSFileName>IW22_NOTIF_DATA_DELETE_ITEM.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>NUMBER</Field1>
+    <Field2>NUMBER</Field2>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>C2-17-A0-5A-32-99-BF-15-42-67-B1-D4-33-7A-DE-2E-7C-23-9A-4B-72-EB-E8-95-43-0D-6E-F8-86-4F-E5-35-67-08-74-71-68-00-82-8A-2D-3E-7C-0A-18-6B-85-EF-12-D1-40-AA-8C-BC-70-D8-88-84-19-C8-B9-C9-6A-EC</WebFileHash>
+    <IosFileHash>8C-3A-B3-FD-4A-17-66-77-EF-FE-4C-05-EE-4B-E4-3F-5D-43-C1-2B-35-83-1D-99-C6-B8-BC-B2-9F-2F-D1-ED-93-9A-11-25-1D-0F-87-AE-6F-95-4C-FC-09-51-FE-C6-64-55-0D-56-95-0C-87-A0-96-15-D7-B0-AE-B8-BC-A3</IosFileHash>
+    <AndroidFileHash>38-77-CC-43-CC-F6-DC-4A-A8-49-03-E6-6D-05-75-21-1A-33-63-DE-A3-E9-DE-8F-E3-D8-7C-16-65-C6-75-0C-C3-2F-46-21-AA-82-F3-CE-1F-8A-3B-29-95-3F-87-E2-87-E9-44-72-E6-9B-0F-41-7D-E3-72-60-6F-BB-A8-2E</AndroidFileHash>
+    <Version>5.2.7</Version>
+  </IW22_NOTIF_DATA_DELETE_ITEM>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>NUMBER</FieldFullName>
+    <FieldName />
+    <TabName>NUMBER</TabName>
+    <Description>Nº da nota</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>ITEM_KEY</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_KEY</TabName>
+    <Description>Nº item no registro do item</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>ITEM_SORT_NO</FieldFullName>
+    <FieldName />
+    <TabName>ITEM_SORT_NO</TabName>
+    <Description>Nº ordenação para o item</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+</NewDataSet>

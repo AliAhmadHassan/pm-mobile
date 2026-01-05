@@ -1,0 +1,191 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="IK11_MEASUREMENT_36478_contador">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebMD5Hash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosMD5Hash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidMD5Hash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <IK11_MEASUREMENT_36478_contador>
+    <ProcessFileName>IK11_MEASUREMENT_36478_contador.iff</ProcessFileName>
+    <FileName>IK11_MEASUREMENT_36478_contador.html</FileName>
+    <WebIconName>IK11_MEASUREMENT_36478_contador.png</WebIconName>
+    <MobileIconName>IK11_MEASUREMENT_36478_contador.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>IK11_MEASUREMENT_36478 - contador</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>MEASUREM_DOCUM_RFC_SINGLE_001</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>1/17/2019 1:22:00 PM</CreatedDate>
+    <JSFileName>IK11_MEASUREMENT_36478_contador.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>MEASUREMENT_POINT</Field1>
+    <Field2>MEASUREMENT_POINT</Field2>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebMD5Hash>5D-E3-4C-67-9A-A0-48-DB-6F-54-A7-EC-53-F6-CC-9F</WebMD5Hash>
+    <IosMD5Hash>A9-C0-38-51-FE-91-8A-B9-DA-94-FC-AA-CB-2E-2C-4D</IosMD5Hash>
+    <AndroidMD5Hash>10-5C-92-7F-4E-FC-48-C7-9F-AA-0E-92-80-0A-82-16</AndroidMD5Hash>
+    <Version>5.2.4</Version>
+  </IK11_MEASUREMENT_36478_contador>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>MEASUREMENT_POINT</FieldFullName>
+    <FieldName />
+    <TabName>MEASUREMENT_POINT</TabName>
+    <Description>Ponto medição</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>READER</FieldFullName>
+    <FieldName />
+    <TabName>READER</TabName>
+    <Description>Encarregado da leitura do valor medição</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>READING_DATE</FieldFullName>
+    <FieldName />
+    <TabName>READING_DATE</TabName>
+    <Description>Data da medição</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>4</FieldID>
+    <FieldFullName>READING_TIME</FieldFullName>
+    <FieldName />
+    <TabName>READING_TIME</TabName>
+    <Description>Hora da medição</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>5</FieldID>
+    <FieldFullName>RECORDED_VALUE</FieldFullName>
+    <FieldName />
+    <TabName>RECORDED_VALUE</TabName>
+    <Description>Valor medido na unidade de entrada</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>22</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>6</FieldID>
+    <FieldFullName>SHORT_TEXT</FieldFullName>
+    <FieldName />
+    <TabName>SHORT_TEXT</TabName>
+    <Description>Texto para o doc.medição</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>40</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>5</SrNo>
+  </SAPFields>
+</NewDataSet>

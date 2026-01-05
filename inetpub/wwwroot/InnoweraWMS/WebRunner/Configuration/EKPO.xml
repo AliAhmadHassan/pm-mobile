@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="EKPO">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sequence" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:string" minOccurs="0" />
+                <xs:element name="isActive" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <EKPO>
+    <ProcessFileName>EKPO.ite</ProcessFileName>
+    <FileName>EKPO.html</FileName>
+    <WebIconName>EKPO.png</WebIconName>
+    <MobileIconName>EKPO.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>EKPO</ShortDescription>
+    <LongDescription />
+    <ProcessType>Data Extractor</ProcessType>
+    <ProcessCode>EKPO</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>8/14/2019 12:18:39 PM</CreatedDate>
+    <JSFileName>EKPO.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>EBELN</Field1>
+    <Field2>EBELN</Field2>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>B5-89-82-73-E6-D2-57-99-B0-1E-86-B8-58-B3-F8-81-2B-93-B0-B4-F9-EC-EE-34-C7-01-BE-18-7D-4A-1B-CC-B0-BE-73-52-EB-C7-FB-29-75-74-F9-88-78-57-D3-CF-DC-02-13-D2-CF-61-B4-38-1A-E7-2B-C8-BE-8E-F8-7C</WebFileHash>
+    <IosFileHash>43-C3-3D-5E-45-12-6B-17-61-E8-33-BC-B6-C4-68-1C-AE-30-EE-81-20-91-83-A7-1B-F6-68-76-B4-01-BA-BB-65-33-35-E6-48-A5-A9-73-52-5A-EF-88-39-68-2F-3C-41-0E-16-4C-A7-95-CB-CF-9A-51-72-03-CA-81-00-A4</IosFileHash>
+    <AndroidFileHash>A3-A3-13-68-3E-6D-BE-09-2C-D2-76-FF-95-6D-86-12-9C-BD-1B-0A-18-46-9A-37-B3-CF-21-8E-E1-70-FB-17-C1-37-12-88-CD-64-7A-1D-5E-67-C3-42-17-2B-CE-0F-1A-C7-C8-A7-26-3A-B2-54-6D-6E-30-5B-12-6F-94-C8</AndroidFileHash>
+    <Version>5.2.10</Version>
+  </EKPO>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>EBELN</FieldFullName>
+    <FieldName />
+    <TabName>EBELN</TabName>
+    <Description>EBELN</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <DEFields>
+    <Sequence>0</Sequence>
+    <FieldName>EBELP</FieldName>
+    <FieldDescription>EBELP</FieldDescription>
+    <FieldLength>5</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>1</Sequence>
+    <FieldName>NETPR</FieldName>
+    <FieldDescription>NETPR</FieldDescription>
+    <FieldLength>6.2</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+  <DEFields>
+    <Sequence>2</Sequence>
+    <FieldName>BANFN</FieldName>
+    <FieldDescription>BANFN</FieldDescription>
+    <FieldLength>10</FieldLength>
+    <isActive>true</isActive>
+  </DEFields>
+</NewDataSet>

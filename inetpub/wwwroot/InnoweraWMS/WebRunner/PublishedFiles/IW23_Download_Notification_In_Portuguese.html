@@ -1,0 +1,827 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!-- <![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title> Baixar e Atualizar Notificações</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	
+	<script>
+	document.write('<link href="../../css/style.css?iwms=' + new Date().getTime() + '" rel="stylesheet" />');
+	</script>
+  
+	<link rel="icon" type="image/png" href="../../images/favicon.ico">
+    <!--    **********************************************************    In development, use the LESS files and the less.js compiler    instead of the minified CSS loaded by default.    **********************************************************    <link rel="stylesheet/less" href="assets/less/admin/module.admin.page.index.less" />    -->
+    <!--[if lt IE 9]><link rel="stylesheet" href="../../assets/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
+    <link href="../../assets/css/admin/module.admin.page.index.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/innerpage_common_style_v3.css" />
+    <link href="../../assets/components/library/jquery-ui/css/jquery-ui.min.css" rel="stylesheet" />
+    
+	<script>
+	document.write('<link href="../../themes/defult.css?iwms=' + new Date().getTime() + '" rel="stylesheet" />');
+	</script>
+	<script>
+	document.write('<link href="../Content/publishedfile.css?iwms=' + new Date().getTime() + '" rel="stylesheet" />');
+	</script>
+
+    
+	<script src="../../Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-migrate-1.1.0.min.js" type="text/javascript"></script>
+    <!--<script src="../../js/jquery.min.js"></script>-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>    <script src="../../js/html5shiv.js"></script>    <script src="../../js/respond.min.js"></script>    <![endif]-->
+    <script type="text/javascript" src="../../assets/components/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v=v1.2.3"></script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/fileconfig.js?iwms=' + new Date().getTime() + '"\><\/script>');
+    </script>
+    <script src="../../Scripts/jquery-ui-1.10.0.min.js" type="text/javascript"></script>
+	
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/innowera.common.js?iwms=' + new Date().getTime() + '"\><\/script>');
+    </script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/innowera.saplogon.js?iwms=' + new Date().getTime() + '"\><\/script>');
+    </script>
+	<script src="../../js/bootbox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/iwmsversion.js?iwms=' + new Date().getTime() + '"\><\/script>');
+    </script>
+    
+	<script src="../../Scripts/jquery.textchange.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.quicksearch.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.dataTables.min.js" type="text/javascript"></script>
+    <!--%JQGRIDFORLOOKUP. This Will Be Replaced. Do not Remove or Modify This Line.%-->
+    <script src="../../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.2.3"></script>
+    <script src="../../Scripts/grid.locale-en.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.jqGrid.src.js" type="text/javascript"></script>
+    <link href="../../slider/jquery.fullPage.css" rel="stylesheet" />
+    <script src="../../slider/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        var deviceid = "WebRunner";
+        if (username == null || username == "") {
+            UserLogout();
+        }
+        $(document).ready(function() {
+            //$("#filecreatedate").text(ConvertDateFromUtc($("#filecreatedate").text()));
+            if (username != null) {
+                $("#lblUserName").text(DisplayName);
+            }
+            BindDiv();
+            DefaultSystem();
+            var loNow = new Date();
+            $("#ProcessIconFile").attr("src", "../Icons/IW23_Download_Notification_In_Portuguese.png?" + loNow.getTime());
+            $('#ilogo').click(function() {
+                window.parent.location = "../../Innowera/ProcessList.aspx";
+            });
+            ReviewProccessData_V2(function(_result) {});
+			$("#updateInSap").hide();
+			$("#lstPriority1").change(function(){
+				var lst = $("#lstPriority1").val();			
+				$("#Form20170426141235549 input[imapvalue='F']").val(lst);
+			});
+			var lst = $("#lstPriority1").val();			
+			$("#Form20170426141235549 input[imapvalue='F']").val(lst);	
+        });
+
+		function Reset_Val(){
+			$("#txt1").val("");
+			Reset('Form20170426141235549');
+			customReset();
+		}
+		
+        function toggleChevron(e) {
+            $(e.target).prev('.panel-heading').find("i.indicator").toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+    </script>
+    <!--[if IE]>    <script type="text/javascript">    var console = { log: function() {} };    </script>    <![endif]-->
+    <link rel="stylesheet" href="../../css/mordentab.css" />
+    <link rel="stylesheet" href="../../responsivepagemenu/css/normalize.min.css" />
+    <link rel="stylesheet" href="../../responsivepagemenu/css/tabs-to-dropdown.css" />
+    <link href="../../css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/fixedHeader.bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <script src="../../assets/components/plugins/nicescroll/jquery.nicescroll.min.js?v=v1.2.3"></script>
+    <script src="../../Scripts/jquery.showLoading.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="../../js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../js/dataTables.fixedHeader.min.js" type="text/javascript"></script>
+    <script src="../../js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="../../js/responsive.bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body style="background-color:#f5f5f5 !important;">
+    <!--  -->
+    <div class="overlay">
+        <div id="loading-img"></div>
+    </div>
+    <!--<form method="post" action=""  id="Form20170510144452757" ifiletype="Transaction" itcode="IW23" title="Baixar e Atualizar Notificações">--><input id="hdnFileVersion" type="hidden" value="1" />
+    <div class="navbar navbar-fixed-top navbar-primary main" role="navigation" style="border-bottom: 3px solid rgb(0, 136, 204);outline-style: solid;">
+        <div class="navbar-header pull-left">
+            <div class="navbar-brand">
+                <a class="appbrand" style="margin-left:20px;" href="../../Innowera/ProcessList.aspx"><img src="../../images/logo.png" alt="Innowera" id="ilogo"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-left" style="margin: 0 !important;">
+                <li class="hidden-xs" style="padding: 0 !important;">
+                    <p style="margin: 0 !important; color: #fff; padding-top: 23px; margin-left: -15px !important;" id="lblVersion">5.1.5</p>
+                </li>
+            </ul>
+        </div>
+		
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ProcessTitle_position">
+            <div class="text-center ProcessTitle_position">
+                <h1 class="lblProcessTitle"> Baixar e Atualizar Notificações </h1>
+            </div>
+        </div>
+		
+		
+        <script src="../../Scripts/prefixfree.min.js"></script>
+        <div class="material-dropdown" style="float: right !important;">
+            <a data-toggle="dropdown" class="dropdown-toggle user dropdown-hover" id="aLogo" runat="server"><img src="../../images/8 (1).jpg" alt="" class="img-circle" /><span class="hidden-xs hidden-sm" id="lblUserName"> &nbsp;&nbsp;&nbsp;Administrator</span></a>
+            <figure style="display:none;"></figure>
+            <figure style="display:none;" class="middle"></figure>
+            <p class="cross" style="display:none;">x</p>
+            <figure style="display:none;"></figure>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" onclick="UserProfile();"><img src="../../images/menu-icon/user.png" />&nbsp;User Profile</a>
+                </li>
+                <li>
+                    <a href="#" onclick="UserLogout();"><img src="../../images/menu-icon/Logout.png" />&nbsp;Log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var materialdropdown = document.querySelector('.material-dropdown'),
+            middle = document.querySelector('.middle'),
+            cross = document.querySelector('.cross'),
+            dropdown = document.querySelector('.dropdown');
+        materialdropdown.addEventListener('click', function() {
+            middle.classList.toggle('active');
+            cross.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        })
+    </script>
+    <div id="content">
+        <div class="row">
+            <div class="col-lg-12 nopadding responsive_dropdown_1" style="position: fixed;right: 0;left: 0;z-index: 1020;">
+                <div class="content-heading border-bottom">
+                    <span id="title" style="display:none">       Baixar e Atualizar Notificações      </span>
+					
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-9 col-sm-12 col-xs-12 nopadding responsive_dropdown">
+                    <div class="tabs-to-dropdown-1">
+                        <nav class="tab-bar">
+                            <ul>
+							   <li><input class="btnBack submitbtn_top_menubar" itag="btnBack" title="Clicking on this button will go to previous page." value="Back" type="button" onclick="javascript:GoBack();" />
+                                <li><input class="btnReset submitbtn_top_menubar" itag="btnReset" title="Clicking on this button will reset the page." value="Resetar" type="button" onclick="Reset_Val();" /></li>
+								<!-- <li><input class="SaveOffline submitbtn_top_menubar" itag="SaveOffline" title="Clicking on this button will save this record as offline." style="display: none;" value="Save" type="button" onclick="SubmitPage(false,false,true,'Form20170426141235549',true);customSubmit('Form20170426141235549');" /></li> -->
+								<li><input class="DeleteOffline submitbtn_top_menubar" itag="DeleteOffline" title="Clicking on this button will delete this record." style="display: none;" value="Delete" type="button" onclick="DeleteInbox(this);" /></li>
+								<li><input class="SendforReview submitbtn_top_menubar" itag="SendforReview" title="Clicking on this button will send this record for review." value="Enviar para revisión" style="display: none;" type="button" onclick="SubmitPage(false,true,false);customSubmit('Form20170426142232152');" /></li>
+								<li><input  class="btnSubmit submitbtn_top_menubar" itag="btnSubmit" title="Send to SAP" value="Baixar detalhes da Notificação" type="button" onclick="SubmitPage(false,false,false);customSubmit('Form20170426142232152');" /></li>
+								<li><input id="updateInSap"class="btnSubmit submitbtn_top_menubar" itag="btnSubmit" title="Send to SAP" value="Atualizar Notificação" type="button" onclick="SubmitPage(false,false,false);customSubmit('Form20170426141235549');" /></li>
+                            </ul>
+                        </nav>
+                        <div class="dropdown"> <button class="dropdown-toggle">More <span class="fa fa-angle-down"></span></button>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-xs-12 nopadding top_menu" style="text-align:right;background-color: #E7F3FF;height: 51px;"> <input class="submitbtn_top_menubar default" type="button" itag="inserttestdata" value="Padrão" /> </div>
+            </div>
+            <div class="clearfix"></div>
+            <div style="height:50px;"></div>
+            <div class="clearfix"></div>
+            <div class="body_innerpage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                            <div class="box">
+							 <span id="filecreatedate"> <p style="text-align: right;font-size: 11px;" id="spnModifiedDate"></p></span>
+                                <form method="post" action="" id="Form20170426142232152" ifiletype="Transaction" itcode="IW23" title="IW23_Download_Notification_In_Portuguese"> <input type="hidden" itag="DetailTables" value="" />
+                                    <input type="hidden" itag="ProcessFileName" value="IW23_Download_Notification_In_Portuguese.itf" />
+                                    <input type="hidden" itag="returnTables" value="" />
+                                    <input type="hidden" itag="pdataid" value="" />
+                                    <div>
+                                        <div class="panel-group" id="accordion1">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#Header">Cabeçalho</a> </h4>
+                                                </div>
+                                                <div id="Header" itable="header" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Número de notificação</p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:350px;display: inline-block;float: left;" maxlength="12" imapvalue="A" name="txt1" id="txt1" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <!--FOOTER-->
+                                        <div style="display:none">
+                                            <div class="panel-group" id="accordion3">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#ReturnField">SAP Return Fields/Tables</a></h4>
+                                                    </div>
+                                                    <div id="ReturnField" class="panel-collapse in">
+                                                        <div class="panel-body" style="padding: 10px !important;">
+                                                            <div class="widget-body" itable="tblDownloadedData">
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Planner Group for Customer Service and Plant Maintenance</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="B" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Maintenance Planning Plant</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="C" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Main work center for maintenance tasks</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="D" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Plant</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="E" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>System Status</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="F" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Proirity</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="G" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Breakdown Indicator</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="I" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Required start date</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="H" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Start of Malfunction (Time)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="K" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p>Start of Malfunction (Date)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" imapvalue="J" style="width: 150px; background-color: #E6E6E6;" class="form-control" readonly="readonly" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--FOOTER-->
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    
+                                    <div class="clearfix"></div>
+                                    <!-- <div id="dvProcessMessage" style="display:none; !important"> -->
+                                        <!-- <div class="panel-group" id="accordion6"> -->
+                                            <!-- <div class="panel panel-default"> -->
+                                                <!-- <div class="panel-heading"> -->
+                                                    <!-- <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion6" href="#Message">Message</a></h4> -->
+                                                <!-- </div> -->
+                                                <!-- <div id="Message" class="panel-collapse in" style="display:none">  -->
+                                                    <!-- <div class="panel-body"> -->
+                                                        <!-- <div class="widget-body"> -->
+                                                            <!-- <div itag="dvFootMsg"> -->
+                                                                <!-- <table style="width: 100%;" cellpadding="0" cellspacing="0"> -->
+                                                                    <!-- <tbody> -->
+                                                                        <!-- <tr> -->
+                                                                            <!-- <td style="display: none;" itag="ActionMsgContainer"> -->
+                                                                                <!-- <div style="padding: 10px;width: 100%;background-color: inherit;"> -->
+                                                                                    <!-- <div class="col-lg-1"> -->
+                                                                                        <!-- <p style="font-size: 14px;"> <strong style="color: red;">Action :</strong> </p> -->
+                                                                                    <!-- </div> -->
+                                                                                    <!-- <div class="col-lg-11"> -->
+                                                                                        <!-- <div itag="ActionMsg" class="ResponseMessage"> -->
+                                                                                            <!-- <p> </p> -->
+                                                                                        <!-- </div> -->
+                                                                                    <!-- </div> -->
+                                                                                    <!-- <div class="clearfix"></div> -->
+                                                                                <!-- </div> -->
+                                                                            <!-- </td> -->
+                                                                        <!-- </tr> -->
+                                                                        <!-- <tr> -->
+                                                                            <!-- <td style="display: none;" itag="fldstResp"> -->
+                                                                                <!-- <div> -->
+                                                                                    <!-- <div itag="dvSysMsg" style="display: none;"> -->
+                                                                                        <!-- <div class="col-lg-12"> -->
+                                                                                            <!-- <div itag="dvMsg" class="ResponseMessage"> </div> -->
+                                                                                            <!-- <div itag="dvUniqueID" class="ResponseMessage"> </div> -->
+                                                                                        <!-- </div> -->
+                                                                                        <!-- <div class="clearfix"></div> -->
+                                                                                    <!-- </div> -->
+                                                                                    <!-- <div style="clear: both;"> </div> -->
+                                                                                    <!-- <div itag="dvSapRetTab" style="display: none;"> -->
+                                                                                        <!-- <div class="col-lg-12"> -->
+                                                                                            <!-- <p style="font-size: 14px;"><strong>Return SAP Messages Table</strong></p> -->
+                                                                                        <!-- </div> -->
+                                                                                        <!-- <div class="col-lg-12"> -->
+                                                                                            <!-- <div itag="dvReturnSapMsg" style="overflow: auto; padding-left: 5px;"> </div> -->
+                                                                                        <!-- </div> -->
+                                                                                        <!-- <div class="clearfix"></div> -->
+                                                                                    <!-- </div> -->
+                                                                                    <!-- <div style="clear: both;"> </div> -->
+                                                                                    <!-- <div itag="fldRStat" style="display: none;"> -->
+                                                                                        <!-- <fieldset> -->
+                                                                                            <!-- <legend>Run Status</legend> -->
+                                                                                            <!-- <div itag="dvStatus"> </div> -->
+                                                                                        <!-- </fieldset> -->
+                                                                                        <!-- <div style="clear: both;"> </div> -->
+                                                                                    <!-- </div> -->
+                                                                                <!-- </div> -->
+                                                                            <!-- </td> -->
+                                                                        <!-- </tr> -->
+                                                                    <!-- </tbody> -->
+                                                                <!-- </table> -->
+                                                            <!-- </div> -->
+                                                        <!-- </div> -->
+                                                    <!-- </div> -->
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="clearfix"></div> -->
+                                    <!-- </div> -->
+                                    <div class="clearfix"></div>
+                                    <div id="fullpage" style="display:none;margin-top: 5px;">
+                                        <div class="section" id="divSection"></div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $("#Form20170426142232152").validate({
+                                            rules: {
+                                                txt1: "required"
+                                            },
+                                            messages: {
+                                                txt1: ""
+                                            },
+                                            submitHandler: function() {
+                                                var HeaderData = GetHeaderData(this);
+                                                var PageIsValid = validatepage(this);
+                                                
+                                                if (PageIsValid) {
+												   var FooterData = GetFooterData(this);
+                                                    var ObjProcessData = {
+                                                        HeaderData: HeaderData,
+                                                        FooterData: FooterData,
+                                                        AdditonalData: null,
+                                                        AutoShowResult: true,
+                                                        IsUpdateOnly: false,
+                                                        IsDoNotDeleteFromDraftBox: false,
+                                                        IsDoNotSaveInSentbox: false
+                                                    };
+                                                    RunProcess_V2(ObjProcessData, this, function(result) {
+													
+														console.log(result);
+														debugger;
+														$('#Form20170426141235549 input[imapvalue="A"]').val($('#Form20170426142232152 input[imapvalue="A"] ').val());
+														$('#Form20170426141235549 input[imapvalue="D"]').val($('#Form20170426142232152 input[imapvalue="D"] ').val());
+														$('#Form20170426141235549 input[imapvalue="C"]').val($('#Form20170426142232152 input[imapvalue="C"] ').val());
+														$('#Form20170426141235549 input[imapvalue="H"]').val($('#Form20170426142232152 input[imapvalue="I"] ').val());
+
+														if ($('#Form20170426142232152 input[imapvalue="I"]').val() == "X") {
+															$('#Form20170426141235549 input[imapvalue="H"]').prop("checked",true);
+														} else {
+															$('#Form20170426141235549 input[imapvalue="H"]').prop("checked",false);
+														}	
+														$('#Form20170426141235549 input[imapvalue="I"]').val($('#Form20170426142232152 input[imapvalue="J"] ').val());
+														$('#Form20170426141235549 input[imapvalue="J"]').val($('#Form20170426142232152 input[imapvalue="K"] ').val());
+														$('#Form20170426141235549 input[imapvalue="B"]').val($('#Form20170426142232152 input[imapvalue="B"] ').val());
+														$('#Form20170426141235549 input[imapvalue="F"]').val($('#Form20170426142232152 input[imapvalue="G"] ').val());
+														$("#lstPriority1").val($('#Form20170426142232152 input[imapvalue="G"] ').val());
+														$('#Form20170426141235549 input[imapvalue="G"]').val($('#Form20170426142232152 input[imapvalue="H"] ').val());
+														$('#Form20170426141235549 input[imapvalue="E"]').val($('#Form20170426142232152 input[imapvalue="E"] ').val());
+														
+														$("#Form20170426141235549").show();
+														$("#dvProcessMessage").show();
+														$("input").removeAttr("disabled").removeClass("ui-state-disabled");         
+														$("#updateInSap").show();
+														$(".ui-datepicker-trigger").removeAttr("style");
+														
+														var action = "";
+														if($(this).val("Baixar detalhes da Notificação")){
+															action = "Baixar detalhes da Notificação";
+														}
+														else if($(this).val("Delete")){
+															action = "Delete";
+														}
+														else if($(this).val("Enviar para revisión")){
+															action = "Enviar para revisión";
+														}
+														else if($(this).val("Atualizar Notificação")){
+															action = "Atualizar Notificação";
+														}
+														
+														$("[itag='dvSysMsg']").show();
+														$("#dvMsg").show();
+														$("#dvMsg").empty();
+														$("#p").empty();
+														var ErrorType = result.SapMessage.length - 1;
+														$("#p").append(action +' (UniqueID: <b style="font-weight: bold !important;">'+ result.UniqueID +'</b>)');
+														switch(result.SapMessage[ErrorType].MsgType){
+															case "S":
+																$('#dvMsg').append('<p class="runmessage runsuccess">'+ result.SapMessage[ErrorType].MsgText +'</p>');
+																break;
+															case "E":
+																$('#dvMsg').append('<p class="runmessage runerror">'+ result.SapMessage[ErrorType].MsgText +'</p>');
+																break;
+															case "W":
+																$('#dvMsg').append('<p class="runmessage runwarning">'+ result.SapMessage[ErrorType].MsgText +'</p>');
+																break;
+															case "I":
+																$('#dvMsg').append('<p class="runmessage runinfo">'+ result.SapMessage[ErrorType].MsgText +'</p>');
+																break;	
+														}
+														
+													});
+												}
+                                                return false;
+                                            }
+                                        });
+                                        $("input[itag='inserttestdata']").bind("click", function(e) {
+                                            $('#Form20170426142232152 #Header input[imapvalue="A"]').val("10001720");
+                                            $(".datepicker").each(function() {
+                                                DefaultDateCheck(SAPDateFormat, this);
+                                            });
+                                            isChanges = true;
+                                        });
+                                    </script>
+                                </form>
+								
+								
+                                <form method="post" action="" id="Form20170426141235549" ifiletype="Transaction" itcode="IW22" title="Baixar e Atualizar Notificações" style="display:none"> <input type="hidden" itag="DetailTables" value="" />
+                                    <input type="hidden" itag="ProcessFileName" value="IW22_Update_Notification_In_Portuguese_V2.itf" />
+                                    <input type="hidden" itag="returnTables" value="" />
+                                    <input type="hidden" itag="pdataid" value="" />
+                                    <div>
+                                        <div class="panel-group" id="accordion1">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#detail">Campos de Retorno do SAP/Tabelas</a> </h4>
+                                                </div>
+                                                <div id="Header" itable="header" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Número de notificação </p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:350px;display: inline-block;float: left;" maxlength="12" imapvalue="A" name="txt1" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>PGrupo planejador atendimento ao cliente e manutenção de planta </p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:105px;display: inline-block;float: left;" maxlength="3" imapvalue="B" name="txt2" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Planejamento de manutenção de planta </p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:140px;display: inline-block;float: left;" maxlength="4" imapvalue="C" name="txt3" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Centro de trabalho principal para serviço de manutenção </p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:280px;display: inline-block;float: left;" maxlength="8" imapvalue="D" name="txt4" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Planta</p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:140px;display: inline-block;float: left;" maxlength="4" imapvalue="E" name="txt5" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Prioridade</p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:35px;display: none;float: left;" maxlength="1" imapvalue="F" name="txt6"  onblur="Changed(this);" /> 
+																<select class="form-control"   id="lstPriority1" style="width:160px;display: inline-block;float: left;" >
+																	<option value="" label=""></option>
+																	<option value="0" label="Agencia">Agencia</option>
+																	<option value="1" label="Muito elevado">Muito elevado</option>
+																	<option value="2" label="Elevado">Elevado</option>
+																	<option value="3" label="Medio">Medio</option>
+																	<option value="4" label="Baixo">Baixo</option>
+																</select>
+																</div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Indicador de avaria </p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <div class="inlinechkbox"><input type="checkbox" id="H" imapvalue="H" name="txt8" class="" /><label for="H"></label></div>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Data de inicio requerido</p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" style="width:350px;display: inline-block;float: left;" maxlength="10" imapvalue="G" name="txt7" class="form-control datepicker" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Hora do mau funcionamento(Hora)</p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" class="form-control" style="width:280px;display: inline-block;float: left;" maxlength="8" imapvalue="J" name="txt10" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p>Inicio de mau funcionamento(Data) </p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> <input type="text" style="width:350px;display: inline-block;float: left;" maxlength="10" imapvalue="I" name="txt9" class="form-control datepicker" /> </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <!--FOOTER-->
+                                        <!--FOOTER-->
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <!-- <div id="dvProcessLogon" style="display:none">
+                                        <div class="panel-group" id="accordion7">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion7" href="#LogonShortcut">Logon Shortcut</a></h4>
+                                                </div>
+                                                <div id="LogonShortcut" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div id="dvLogonShortcuts" class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p><strong>Logon Shortcut</strong></p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <select id="cmbLogonList" class="form-control" style="width:80%;float:left;"></select>
+                                                                    <img id="RefreshLogons" src="../../Content/images/refresh_24.png" alt="Refresh List" title="Refresh List" onclick="DefaultSystem();" style="float:left;margin-left:10px;margin-top:5px;cursor:pointor;" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="clearfix"></div>
+                                    <div id="dvProcessMessage">
+                                        <div class="panel-group" id="accordion6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion6" href="#Message">Message</a></h4>
+                                                </div>
+                                                <div id="Message" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div itag="dvFootMsg">
+                                                                <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="display: block;" itag="ActionMsgContainer">
+                                                                                <div style="padding: 10px;width: 100%;background-color: inherit;">
+                                                                                    <div class="col-lg-1">
+                                                                                        <p style="font-size: 14px;"> <strong style="color: red;">Action :</strong> </p>
+                                                                                    </div>
+                                                                                    <div class="col-lg-11">
+                                                                                        <div itag="ActionMsg" class="ResponseMessage">
+                                                                                            <p id="p"> </p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="clearfix"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="display: block;" itag="fldstResp">
+                                                                                <div>
+                                                                                    <div itag="dvSysMsg" style="display: none;">
+                                                                                        <div class="col-lg-12">
+                                                                                            <div itag="dvMsg" id="dvMsg" class="ResponseMessage"> </div>
+                                                                                            <div itag="dvUniqueID" class="ResponseMessage"> </div>
+                                                                                        </div>
+                                                                                        <div class="clearfix"></div>
+                                                                                    </div>
+                                                                                    <div style="clear: both;"> </div>
+                                                                                    <div itag="dvSapRetTab" style="display: none;">
+                                                                                        <div class="col-lg-12">
+                                                                                            <p style="font-size: 14px;"><strong>Return SAP Messages Table</strong></p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-12">
+                                                                                            <div itag="dvReturnSapMsg" style="overflow: auto; padding-left: 5px;"> </div>
+                                                                                        </div>
+                                                                                        <div class="clearfix"></div>
+                                                                                    </div>
+                                                                                    <div style="clear: both;"> </div>
+                                                                                    <div itag="fldRStat" style="display: none;">
+                                                                                        <fieldset>
+                                                                                            <legend>Run Status</legend>
+                                                                                            <div itag="dvStatus"> </div>
+                                                                                        </fieldset>
+                                                                                        <div style="clear: both;"> </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div id="fullpage" style="display:none;margin-top: 5px;">
+                                        <div class="section" id="divSection"></div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $("#Form20170426141235549").validate({
+                                            rules: {},
+                                            messages: {},
+                                            submitHandler: function() {
+                                                var HeaderData = GetHeaderData(this);
+                                                var PageIsValid = validatepage(this);
+                                                var FooterData = GetFooterData(this);
+                                                if (PageIsValid) {
+                                                    var ObjProcessData = {
+                                                        HeaderData: HeaderData,
+                                                        FooterData: FooterData,
+                                                        AdditonalData: null,
+                                                        AutoShowResult: true,
+                                                        IsUpdateOnly: false,
+                                                        IsDoNotDeleteFromDraftBox: false,
+                                                        IsDoNotSaveInSentbox: false
+                                                    };
+                                                    RunProcess_V2(ObjProcessData, this, function(result) {});
+                                                }
+                                                return false;
+                                            }
+                                        });
+                                        $("input[itag='inserttestdata']").bind("click", function(e) {                                            
+                                            $(".datepicker").each(function() {
+                                                DefaultDateCheck(SAPDateFormat, this);
+                                            });
+                                            isChanges = true;
+                                        });
+                                    </script>
+                                </form>
+								<div id="dvProcessLogon" style="display:none">
+                                        <div class="panel-group" id="accordion7">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion7" href="#LogonShortcut">Atalho de Logon</a></h4>
+                                                </div>
+                                                <div id="LogonShortcut" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div id="dvLogonShortcuts" class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p><strong>Atalho de Logon</strong></p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <select id="cmbLogonList" class="form-control" style="width:80%;float:left;"></select>
+                                                                    <img id="RefreshLogons" src="../../Content/images/refresh_24.png" alt="Refresh List" title="Refresh List" onclick="DefaultSystem();" style="float:left;margin-left:10px;margin-top:5px;cursor:pointor;" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div style="height:40px;">&nbsp;</div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</form>-->
+    <div id="dvSAP"></div>
+    <div id="dvSAPAdd"></div>
+    <div class="modal fade" id="dvDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">						<span aria-hidden="true">&times;</span>						<span class="sr-only">Close</span>					</button>
+                    <h4 class="modal-title" id="titlelookup"> Lookup </h4>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-lg-12 col-md-3 col-sm-12 col-xs-12"> </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-lg-12 col-md-3 col-sm-12 col-xs-12">
+                                <div class="">
+                                    <div itag="lookupdialog" class="table-responsive">
+                                        <table id="divlookupcontent" class="table">
+                                            <tr>
+                                                <td> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <div style="float: left;" id="Pager"> </div> <input class="btn btn-primary" type="button" value="Select" style="float:right;" /> </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="hidden-print">
+        <div class="copy" id="currLogon_parent">Default System:
+            <a onclick="LoadAvailableLogonForCurrentUser();" clientidmode="Static" id="currLogon" href="#"></a>
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+</body>
+
+</html>

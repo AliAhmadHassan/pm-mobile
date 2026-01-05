@@ -1,0 +1,373 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ZFV60">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ZFV60>
+    <ProcessFileName>ZFV60.itf</ProcessFileName>
+    <FileName>ZFV60.html</FileName>
+    <WebIconName>ZFV60.png</WebIconName>
+    <MobileIconName>ZFV60.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>ZFV60</ShortDescription>
+    <LongDescription />
+    <ProcessType>Transaction</ProcessType>
+    <ProcessCode>ZFV60</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>7/15/2019 4:49:00 PM</CreatedDate>
+    <JSFileName>ZFV60.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>INVFO-ACCNT</Field1>
+    <Field2>INVFO-ACCNT</Field2>
+    <Default1>PublishDummyFolder</Default1>
+    <Default2>ZFV60-15072019014845.txt</Default2>
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>5A-8A-99-24-94-83-5B-C3-D3-A9-C4-15-79-EC-28-52-B9-48-13-1F-30-86-B5-5E-F8-56-6F-9F-DD-35-F6-5B-95-3C-90-30-21-6B-39-05-A2-72-C5-B7-8D-ED-98-34-1C-5D-7F-36-31-FD-63-DB-5B-F2-0A-99-6C-CB-AA-39</WebFileHash>
+    <IosFileHash>F6-8A-95-C6-16-2A-82-8C-70-70-B9-80-AE-B0-94-BF-30-70-B8-46-B6-FB-D6-D5-77-36-A6-1B-AF-22-8C-40-D0-B3-B6-02-11-D6-F4-FE-91-1D-A8-4B-7C-45-A9-C1-42-45-5D-3C-59-3A-A7-97-AA-02-F7-97-95-11-88-B1</IosFileHash>
+    <AndroidFileHash>8C-43-66-01-33-40-A0-5E-0B-C4-1B-69-0F-27-57-4A-49-C0-AA-13-AF-2F-55-62-42-A4-00-CF-88-19-E9-DA-2B-6F-E2-55-0B-1D-7F-6C-54-92-9B-FE-50-DE-4D-E9-AF-60-63-93-18-53-20-65-5C-B4-5B-93-7E-76-F3-29</AndroidFileHash>
+    <Version>5.2.9</Version>
+  </ZFV60>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>INVFO-ACCNT</FieldFullName>
+    <FieldName>ACCNT</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-ACCNT</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>INVFO-BLDAT</FieldFullName>
+    <FieldName>BLDAT</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-BLDAT</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>INVFO-XBLNR</FieldFullName>
+    <FieldName>XBLNR</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-XBLNR</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>4</FieldID>
+    <FieldFullName>INVFO-BUDAT</FieldFullName>
+    <FieldName>BUDAT</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-BUDAT</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>5</FieldID>
+    <FieldFullName>INVFO-WRBTR</FieldFullName>
+    <FieldName>WRBTR</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-WRBTR</Description>
+    <Datatype>Decimal</Datatype>
+    <FieldLength>16</FieldLength>
+    <FieldDecimalPrecision>2</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>6</FieldID>
+    <FieldFullName>INVFO-BUPLA</FieldFullName>
+    <FieldName>BUPLA</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-BUPLA</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>5</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>7</FieldID>
+    <FieldFullName>INVFO-SGTXT</FieldFullName>
+    <FieldName>SGTXT</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-SGTXT</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>50</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>6</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>8</FieldID>
+    <FieldFullName>ACGL_ITEM-HKONT</FieldFullName>
+    <FieldName>HKONT</FieldName>
+    <TabName>ACGL_ITEM</TabName>
+    <Description>General Ledger Account</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>8</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>true</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>7</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>9</FieldID>
+    <FieldFullName>ACGL_ITEM-WRBTR</FieldFullName>
+    <FieldName>WRBTR</FieldName>
+    <TabName>ACGL_ITEM</TabName>
+    <Description>Amount in document currency</Description>
+    <Datatype>Decimal</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>2</FieldDecimalPrecision>
+    <IsRequired>true</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>8</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>10</FieldID>
+    <FieldFullName>ACGL_ITEM-KOSTL</FieldFullName>
+    <FieldName>KOSTL</FieldName>
+    <TabName>ACGL_ITEM</TabName>
+    <Description>Cost Center</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>9</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>11</FieldID>
+    <FieldFullName>ACGL_ITEM-PROJK</FieldFullName>
+    <FieldName>PROJK</FieldName>
+    <TabName>ACGL_ITEM</TabName>
+    <Description>ACGL_ITEM-PROJK(01)</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>10</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>12</FieldID>
+    <FieldFullName>INVFO-ZTERM</FieldFullName>
+    <FieldName>ZTERM</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-ZTERM</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>11</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>13</FieldID>
+    <FieldFullName>INVFO-ZBD1T</FieldFullName>
+    <FieldName>ZBD1T</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-ZBD1T</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>12</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>14</FieldID>
+    <FieldFullName>INVFO-ZLSCH</FieldFullName>
+    <FieldName>ZLSCH</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-ZLSCH</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>13</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>15</FieldID>
+    <FieldFullName>INVFO-ZLSPR</FieldFullName>
+    <FieldName>ZLSPR</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-ZLSPR</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>14</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>16</FieldID>
+    <FieldFullName>INVFO-HBKID</FieldFullName>
+    <FieldName>HBKID</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-HBKID</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>15</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>17</FieldID>
+    <FieldFullName>INVFO-HKTID</FieldFullName>
+    <FieldName>HKTID</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-HKTID</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>16</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>18</FieldID>
+    <FieldFullName>INVFO-KIDNO</FieldFullName>
+    <FieldName>KIDNO</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-KIDNO</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>17</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>19</FieldID>
+    <FieldFullName>INVFO-BKTXT</FieldFullName>
+    <FieldName>BKTXT</FieldName>
+    <TabName>INVFO</TabName>
+    <Description>INVFO-BKTXT</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>18</SrNo>
+  </SAPFields>
+</NewDataSet>

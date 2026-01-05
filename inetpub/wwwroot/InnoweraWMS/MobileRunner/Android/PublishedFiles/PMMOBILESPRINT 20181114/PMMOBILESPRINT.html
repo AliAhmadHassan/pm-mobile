@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <meta name="format-detection" content="telephone=no" />
+    <title> PM Mobile Sprint </title>
+    <link href="../../../css/ProcessFile_New.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" id="PublishTheme" href="../../../Content/v145/BlueTheme.css" />
+    <link id="PublishDeviceSpecific" rel="stylesheet" href="#" />
+    <script type="text/javascript" src="../../../scripts/Managers/JavascriptManager.js"></script>
+    <script> for (var i = 0; i < HeaderProcessFileScripts.length; i++) { document.write("<script type='text/javascript' src='" + HeaderProcessFileScripts[i] + "?t=" + Date.now() + "'><\/script>"); }    </script>
+    <!-- <script type="text/javascript">         var isRun = window.sessionStorage.getItem(iwrIsAllowRunInMobile); if (isRun == null) { isRun = window.localStorage.getItem(iwrIsAllowRunInMobile); } isRun = (isRun == "true") ? true : false;username = window.sessionStorage.getItem(iwrUserName);if (username == null) {LogoutFromApp(); } else { $("#lblApplicationMode").show(); }         $(document).ready(function () {             SetDefaultSystem(); SetLogonShortCut(); var loNow = new Date(); $(".ProcessIconFile").attr("src", "../Icons/CAT2_Time_Sheet.png?time=" + loNow.getTime());        });    </script>-->
+    <style>
+
+        .button {
+    background-color: #4CAF50 !important;
+    border: none;
+    color: white !important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;	
+}
+
+.clearing{
+    margin-bottom: 15px;
+}
+
+.control-label{
+    margin-bottom: 0px !important;
+}
+
+.form-control{
+    width: 100%;
+}
+
+ .buttonGridPg {
+    background-color: #4CAF50 !important;
+    border: none;
+    color: white !important;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;	
+}
+
+.form-group
+{
+margin-left: 30px !important;
+margin-bottom: 15px !important;
+}
+	
+.headerBlock {font-weight: bold !important; font-size: 15px !important;}
+
+#main {margin-left: 5px;}
+
+#menulist {
+    margin: 0;
+    padding: 0;
+	/* width: 700px; */
+}
+
+#sidebarMenu {
+	width: auto;
+    float: none;    
+}
+.ListMenuitem {
+	background-color:  #1a9ccb;
+	border-radius: 5px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    font-size: large;    
+	color:white;
+	font-family: Arial, sans-serif;
+	font-size:x-small;
+	text-align: left;
+    border: 1px solid #cccccc;
+   
+}
+.ListMenuitem a{display: inline-block; width: 100%; text-decoration: none; color:white;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sidebarMenu {background: blue;}
+	
+}
+
+/* Small devices (portrait tablets and large phones) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    .panel-body {background-color: #cccccc;}
+	#menulist{width:710px;}	
+	
+
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+ .panel-body {background-color: #cccccc;}
+  #menulist{width:960px;}  
+
+  
+
+}
+
+#tableGrid th{
+    background-color: #DADADA;
+    color:black;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > li {
+    display: inline;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.innerB {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.row
+{
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+{
+	position: relative;
+	min-height: 1px;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+ 
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12
+	{
+		float: left;
+	}
+
+	.col-sm-12
+	{
+		width: 100%;
+	}
+
+	.col-sm-11
+	{
+		width: 91.66666667%;
+	}
+
+	.col-sm-10
+	{
+		width: 83.33333333%;
+	}
+
+	.col-sm-9
+	{
+		width: 75%;
+	}
+
+	.col-sm-8
+	{
+		width: 66.66666667%;
+	}
+
+	.col-sm-7
+	{
+		width: 58.33333333%;
+	}
+
+	.col-sm-6
+	{
+		width: 50%;
+	}
+
+	.col-sm-5
+	{
+		width: 41.66666667%;
+	}
+
+	.col-sm-4
+	{
+		width: 33.33333333%;
+	}
+
+	.col-sm-3
+	{
+		width: 25%;
+	}
+
+	.col-sm-2
+	{
+		width: 16.66666667%;
+	}
+
+	.col-sm-1
+	{
+		width: 8.33333333%;
+	}
+</style>
+
+
+
+</head>
+
+<body> <input id="hdntemplateversion" type="hidden" value="1.0" /> <input id="hdnTemplateSheetName" type="hidden" value="" />
+    <input id="hdnfieldmapper" type="hidden" value="0" itag="hdnShowMapper" />
+    <div id="dvDisabled"> </div>
+    <div data-role="page" data-theme="c" id="" data-overlay-theme="b">
+        <div class="divTopBar"> &nbsp; </div>
+        <div id="MainPage">
+            <div class="header ui-bar-b">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="backbutton"> <a id="btnBack" href="#"> <img src="../../../new_images/back.png" width="24"
+                                    style="padding-top: 2px;" alt="" /> </a> </td>
+                        <td class="titletop">
+                            <h1 id="title"> PM Mobile Sprint </h1>
+                        </td>
+                        <td class="morebutton"> <a id="divOptions" href="#" class=" material-dropdown"> <img src="../../../new_images/moretop.png"
+                                    width="24" alt="" /> </a> </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="divHeaderFix"> </div>
+            <div class="main">
+                <div class="btnDeafult" style="display: none;"> <a href="#" data-mini="true" data-role="button"
+                        data-icon="check" data-inline="true" data-theme="b" itag="inserttestdata" value="Default Values">Default
+                        Values</a> </div>
+                <div>
+                    <!--divGET_EQUNR-->
+                    <form  method="post" action="" id="Form20180927230137502" ifiletype="Data Extractor" itcode="V_EQUI"
+                        title="1_GET_EQUNR" id=" Form20180927230137502" ifiletype="Data Extractor" itcode="V_EQUI"
+                        title="1_GET_EQUNR" class="form-horizontal">
+                        <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="1_GET_EQUNR.ite" />
+                        <input type="hidden" itag="returntables" value="" />
+                        <input type="hidden" itag="pdataid" value="" />
+                        <input type="hidden" itag="defiltertype" value="CustomFilter" />
+
+                        <div itag="tblDataDE" id="divGET_EQUNR">
+                            <div style="overflow-y: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                <table itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                    <thead class="ui-bar-b">
+                                        <tr>
+                                            <th imatno="EQUNR">Nº equipamento</th>
+                                            <th imatno="INVNR">Nº inventário</th>
+                                            <th imatno="EQKTX">Denominação do objeto técnico</th>
+                                            <th imatno="ANLNR">Nº principal do imobilizado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="datacontent"></div>
+
+                        <!-- <a class="button" itag="btnGetRowData" style="float:left;width:14%;">GetRowData</a> -->
+
+                    </form>
+
+                    <!--divGET_ORDERS-->
+                    <form method="post"  action="" id="Form20181002001415050" ifiletype="BAPI/RFM" itcode="ZPMF_GET_ORDERS_IW39"
+                        title="GET_ORDERS" id="Form20181002001415050" ifiletype="BAPI/RFM" itcode="ZPMF_GET_ORDERS_IW39"
+                        title="GET_ORDERS" class="form-horizontal">
+                        <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="GET_ORDERS.iff" />
+                        <input type="hidden" itag="returntables" value="ET_ORDERS_IW39" />
+                        <input type="hidden" itag="pdataid" value="" />
+
+                        <div id="divGET_ORDERS">
+                            <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem - Lista </h4>
+                            </div>
+                            <div class="panel-body">
+                                <div style="overflow-y: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                    <table itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                        <thead class="ui-bar-b">
+                                            <tr>
+                                                <th imatno="Nº ordem">Nº ordem</th>
+                                                <th imatno="Texto breve">Texto breve</th>
+                                                <th imatno="Nº equipamento">Nº equipamento</th>
+                                                <th imatno="Denominação do objeto técnico">Denominação do objeto
+                                                    técnico</th>
+                                                <th imatno="Nº inventário">Nº inventário</th>
+                                                <th imatno="Grupo de planejamento para serviços cliente e manutenção">Grupo
+                                                    de planejamento para serviços cliente e manutenção</th>
+                                                <th imatno="Centro de trabalho responsável para medidas de manutenção">Centro
+                                                    de trabalho responsável para medidas de manutenção</th>
+                                                <th imatno="Ordem-PM: Data de referência">Ordem-PM: Data de referência</th>
+                                                <th imatno="Local de instalação">Local de instalação</th>
+                                                <th imatno="Denominação do loc.instalação">Denominação do
+                                                    loc.instalação</th>
+                                                <th imatno="Rua e nº">Rua e nº</th>
+                                                <th imatno="Local">Local</th>
+                                                <th imatno="Tipo de atividade de manutenção">Tipo de atividade de
+                                                    manutenção</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+
+
+                                <!-- <a class="button" itag="btnGetRowData" style="float:left;width:14%;">GetRowData</a>  -->
+
+                                <div>
+                                    <div id="btnDiv_GET_ORDERS">
+                                        <a class="button" itag="btnBack_GET_ORDERS" style="float:left;width:10%;">Voltar</a>
+                                        <a class="button" itag="btnExecute_GET_ORDERS" style="float:left;width:14%;">Executar</a>
+                                    </div>
+
+                                    <div class="clearing"> </div>
+                                    <div class="datacontent"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--divGET_ORDERS_DETAILS-->
+                    <form method="post"  action=""  id="Form20181112114946165" ifiletype="BAPI/RFM" itcode="ZPMF_IW33_EXIBIR_ORDEM"
+                        title="ZPMF_IW33_EXIBIR_ORDEM"=" id=" Form20181112114946165" ifiletype="BAPI/RFM" itcode="ZPMF_IW33_EXIBIR_ORDEM"
+                        title="ZPMF_IW33_EXIBIR_ORDEM"" class=" form-horizontal"> <input type="hidden" itag="detailtables"
+                            value="" /> <input type="hidden" itag="processfilename" value="ZPMF_IW33_EXIBIR_ORDEM.iff" />
+                        <input type="hidden" itag="returntables" value="ET_ANEXOS,ET_COMPONENTS,ET_OPERATIONS,ET_TEXTS,ET_TEXT_LINES" />
+                        <input type="hidden" itag="pdataid" value="" /> <!-- <div class="datacontent"> -->
+                        <input type="text" data-role="none" class="form-control input-sm" imapvalue="P" style="display: none !important;"
+                            class="form-control" maxlength=30 readonly="readonly" />
+
+                        <div id="divGET_ORDERS_DETAILS">
+                            <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem - Detalhada </h4>
+                            </div>
+                            <div class="panel-body">
+                                <div id="btnDiv_GET_ORDERS_DETAILS">
+                                    <div>
+                                        <a class="buttonGridPg" itag="btnBack_GET_ORDERS_DETAILS" style="width:15%;">Voltar</a>
+                                        <a class="buttonGridPg" itag="btnExecute_GET_ORDERS_DETAILS" style="width:40%; display: none">Exibir
+                                            Texto Descritivo</a>
+                                        <a class="buttonGridPg" itag="btnBack_GET_ORDERS_DETAILS" style="width:20%;">Exibir
+                                            Nota</a>
+                                    </div>
+
+                                    
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Nº ordem
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input style="width: 100%;" id="txtNºordem" data-role="none" class="form-control input-sm" type="text" maxlength="50" imapvalue="B" name="txtNºordem" />
+                                        </div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Centro de trabalho
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtCentroDeTrabalho"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                                imapvalue="C" name="txtCentroDeTrabalho" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                                Local de instalação
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input style="width: 100%;" id="txtLocalDeInstalação"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                                imapvalue="C" name="txtLocalDeInstalação" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Nº equipamento
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input data-role="none" id="txtNºequipamento"
+                                                class="form-control input-sm" type="text" irequired="true" value="331504"
+                                                imapvalue="A" name="txtNºequipamento" maxlength="50" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Nº da nota
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtNºDaNota"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                                imapvalue="C" name="txtNºDaNota" /></div>
+                                    </div>
+                                    <div class="clearing"> </div>
+
+                                    <div class="form-group" >
+                                        <div class="col-sm-3">
+                                            Parada
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtCódigoParada"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                                imapvalue="B" name="txtCódigoParada" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Data Ini. Avaria
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtInícioDaAvariaData"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                                imapvalue="C" name="txtInícioDaAvariaData" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Data Fin. Avaria
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtDataFinAvaria"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                                imapvalue="C" name="txtDataFinAvaria" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Hora Ini. Avaria
+                                        </div>
+                                        <div class="col-sm-9"><input data-role="none" id="txtHoraIniAvaria"
+                                                class="form-control input-sm" type="text" irequired="true" value="331504"
+                                                imapvalue="A" name="txtHoraIniAvaria" maxlength="50" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Hora Fin. Avaria
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtHoraFinAvaria"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                                imapvalue="C" name="txtHoraFinAvaria" /></div>
+                                    </div>
+                                    <div class="clearing"> </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Duração da Parada
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtDuraçãodaParada"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                                imapvalue="C" name="txtDuraçãodaParada" /></div>
+                                    </div>
+                                    <div class="clearing"> </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            Notificador
+                                        </div>
+                                        <div class="col-sm-9"><input style="width: 100%;" id="txtNotificador"
+                                                data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                                imapvalue="C" name="txtNotificador" /></div>
+                                    </div>
+                                    <div class="clearing"></div>
+                                    <!-- <div class="datacontent"> </div> -->
+
+
+                                    <div itag="tblDataDE">
+                                        <div style="overflow-y: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                            <table itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                                <thead class="ui-bar-b">
+                                                    <tr>
+                                                        <th imatno="Nº operação">Nº operação</th>
+                                                        <th imatno="Suboperação">Suboperação</th>
+                                                        <th imatno="Centro de trabalho">Centro de trabalho</th>
+                                                        <th imatno="Txt.breve operação">Txt.breve operação</th>
+                                                        <th imatno="Nº equipamento">Nº equipamento</th>
+                                                        <th imatno="Local de instalação">Local de instalação</th>
+                                                        <th imatno="Nº da nota">Nº da nota</th>
+                                                        <th imatno="Link"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="datacontent"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="divDisplayGetText">
+                            <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem - Texto Descritivo </h4>
+                            </div>
+                            <div class="panel-body">
+                                <a class="buttonGridPg" itag="btnBack_Get_Text" style="width:18%; ">Voltar</a>
+                                <br />
+                                <label id="lblGetText" />
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <form method="post" action=""  id="Form20181003225819063" ifiletype="BAPI/RFM" itcode="BAPI_ALM_ORDER_GET_DETAIL"
+                        title="1_GET_ORDER_DETAILS" id="Form20181003225819063" ifiletype="BAPI/RFM" itcode="BAPI_ALM_ORDER_GET_DETAIL"
+                        title="1_GET_ORDER_DETAILS" class="form-horizontal">
+                        <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="1_GET_ORDER_DETAILS.iff" />
+                        <input type="hidden" itag="returntables" value="ET_OPERATIONS,RETURN" />
+                        <input type="hidden" itag="pdataid" value="" />
+
+
+                        <!-- <div id="divGET_ORDERS_DETAILS">
+                                <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem - Detalhada </h4>
+                            </div>
+                            <div class="panel-body">
+                            <div id="btnDiv_GET_ORDERS_DETAILS">
+                                <div>
+                                    <a class="buttonGridPg" itag="btnBack_GET_ORDERS_DETAILS" style="width:15%;">Voltar</a>
+                                    <a class="buttonGridPg" itag="btnExecute_GET_ORDERS_DETAILS" style="width:40%; display: none">Exibir
+                                        Texto Descritivo</a>
+                                    <a class="buttonGridPg" itag="btnBack_GET_ORDERS_DETAILS" style="width:20%;">Exibir
+                                        Nota</a>
+                                    
+                                </div>
+
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important; margin-top: 15px;">
+                                    <label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Nº ordem</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtNºordem" data-role="none" class="form-control input-sm" type="text" maxlength="50" imapvalue="B" name="txtNºordem" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Centro de trabalho</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtCentroDeTrabalho" data-role="none" class="form-control input-sm" type="text" maxlength="50" imapvalue="C" name="txtCentroDeTrabalho" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Local de instalação</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtLocalDeInstalação" data-role="none" class="form-control input-sm" type="text" maxlength="50" imapvalue="C" name="txtLocalDeInstalação" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Nº equipamento</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input data-role="none" id="txtNºequipamento" class="form-control input-sm" type="text" irequired="true" value="331504" imapvalue="A" name="txtNºequipamento" maxlength="50" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Nº da nota</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtNºDaNota"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txtNºDaNota" /></div>
+                                </div>
+                                <div class="clearing"> </div>
+                                <div class="form-group" style="margin-left: 0px !important; margin-top: 15px;">
+                                    <label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Parada</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtCódigoParada"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                            imapvalue="B" name="txtCódigoParada" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Data Ini. Avaria</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtInícioDaAvariaData"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                            imapvalue="C" name="txtInícioDaAvariaData" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Data Fin. Avaria</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtDataFinAvaria"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="50"
+                                            imapvalue="C" name="txtDataFinAvaria" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Hora Ini. Avaria</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input data-role="none" id="txtHoraIniAvaria"
+                                            class="form-control input-sm" type="text" irequired="true" value="331504"
+                                            imapvalue="A" name="txtHoraIniAvaria" maxlength="50" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Hora Fin. Avaria</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtHoraFinAvaria"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txtHoraFinAvaria" /></div>
+                                </div>
+                                <div class="clearing"> </div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Duração da Parada</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtDuraçãodaParada"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txtDuraçãodaParada" /></div>
+                                </div>
+                                <div class="clearing"> </div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Notificador</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtNotificador"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txtNotificador" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                               
+                            </div>
+
+                            <div itag="tblDataDE">
+                                <div style="overflow-y: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                    <table itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                        <thead class="ui-bar-b">
+                                            <tr>
+                                                <th imatno="Nº operação">Nº operação</th>
+                                                <th imatno="Suboperação">Suboperação</th>
+                                                <th imatno="Centro de trabalho">Centro de trabalho</th>
+                                                <th imatno="Txt.breve operação">Txt.breve operação</th>
+                                                <th imatno="Nº equipamento">Nº equipamento</th>
+                                                <th imatno="Local de instalação">Local de instalação</th>
+                                                <th imatno="Nº da nota">Nº da nota</th>
+                                                <th imatno="Link"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="datacontent"></div>
+                        </div>
+                        </div> -->
+                    </form>
+
+                    <!--2_GET_ORDER_MALFUNCTION-->
+                    <form method="post" action="" id="Form20181003230721394" ifiletype="BAPI/RFM" itcode="IQS4_GET_NOTIFICATION"
+                        title="2_GET_ORDER_MALFUNCTION" id="Form20181003230721394" ifiletype="BAPI/RFM" itcode="IQS4_GET_NOTIFICATION"
+                        title="2_GET_ORDER_MALFUNCTION" class=" form-horizontal">
+                        <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="2_GET_ORDER_MALFUNCTION.iff" />
+                        <input type="hidden" itag="returntables" value="RETURN" />
+                        <input type="hidden" itag="pdataid" value="" />
+                        <!-- <div class="datacontent"> -->
+
+                    </form>
+
+                    <!--divMainScreen-->
+                    <form method="post"  action="" id="Form20181004192116851" ifiletype="Transaction" itcode="XK01"
+                        title="PM Mobile Sprint"=" id=" Form20181004192116851" ifiletype="Transaction" itcode="XK01"
+                        title="PM Mobile Sprint"" class=" form-horizontal"> <input type="hidden" itag="detailtables"
+                            value="" /> <input type="hidden" itag="processfilename" value="PMMOBILESPRINT.itf" />
+                        <input type="hidden" itag="returntables" value="" /> <input type="hidden" itag="pdataid" value="" />
+                        <!-- <div class="datacontent"> -->
+
+                        <div class="datacontent" id="divMainScreen">
+
+                            <div class="panel">
+                                <div class="panel-body" style="margin-top: 0px;height:auto;">
+                                    <h3 class="headerBlock">Ordem PM</h3>
+                                    <h3 class="panel-title" style="border:1px solid;background-color: #cccccc;">
+                                        <div id="sidebarMenu">
+                                            <ul id="menulist">
+                                                <!-- <li class="ListMenuitem"><a href="#" onclick="alert('Display Order');">Display Order</a></li> -->
+                                                <li class="ListMenuitem"><a href="#" itag="btnDisplayOrders">Exibir
+                                                        Ordem</a></li>
+                                                <!-- <li class="ListMenuitem"><a href="#" onclick="alert('Change Order');">Change Order</a></li> -->
+                                                <li class="ListMenuitem"><a href="#" onclick="alert('Change Orders');">Modificar
+                                                        Ordem</a></li>
+                                                <li class="ListMenuitem"><a href="#" onclick="alert('Individual Confirmation');">Confirmação
+                                                        Individual</a></li>
+                                                <li class="ListMenuitem"><a href="#" onclick="alert('Collective confirmation');">Confirmação
+                                                        Coletiva</a></li>
+                                                <li class="ListMenuitem"><a href="#" onclick="alert('Cancel Order Confirmation');">Estornar
+                                                        Confirmação de Ordem</a></li>
+                                            </ul>
+                                        </div>
+                                    </h3>
+                                    <h3 class="headerBlock">Nota PM</h3>
+                                    <h3 class="panel-title" style="border:1px solid; margin-top: 12px;background-color: #cccccc;">
+                                        <div id="sidebarMenu">
+                                            <ul id="menulist">
+                                                <li class="ListMenuitem"><a href="#" onclick="getLocation()">Exibir
+                                                        Nota</a></li>
+                                                <li class="ListMenuitem"><a href="#">Modificar Nota</a></li>
+                                            </ul>
+                                        </div>
+                                    </h3>
+                                    <h3 class="headerBlock">Equipamento</h3>
+                                    <h3 class="panel-title" style="border:1px solid; background-color: #cccccc;">
+                                        <div id="sidebarMenu">
+                                            <ul id="menulist">
+                                                <li class="ListMenuitem"><a href="#">Exibir Equipamento</a></li>
+                                                <li class="ListMenuitem"><a href="#">Modificar Equipamento</a></li>
+                                            </ul>
+                                        </div>
+                                    </h3>
+                                    <h3 class="headerBlock">Local de Instalação</h3>
+                                    <h3 class="panel-title" style="border:1px solid; margin-top: 12px;background-color: #cccccc;">
+                                        <div id="sidebarMenu">
+                                            <ul id="menulist">
+                                                <li class="ListMenuitem"><a href="#">Exibir Local de Instalação</a></li>
+                                                <li class="ListMenuitem"><a href="#">Modificar Local de Instalação</a></li>
+                                            </ul>
+                                        </div>
+                                    </h3>
+                                    <h3 class="headerBlock">Pontos de Medição</h3>
+                                    <h3 class="panel-title" style="border:1px solid; margin-top: 12px;background-color: #cccccc;">
+                                        <div id="sidebarMenu">
+                                            <ul id="menulist">
+                                                <li class="ListMenuitem"><a href="#">Exibir Ponto de Medição</a></li>
+                                            </ul>
+                                        </div>
+                                    </h3>
+                                    <h3 class="headerBlock">Documento Medição</h3>
+                                    <h3 class="panel-title" style="border:1px solid; margin-top: 12px;background-color: #cccccc;">
+                                        <div id="sidebarMenu">
+                                            <ul id="menulist">
+                                                <li class="ListMenuitem"><a href="#">Criar Documento de Medição</a></li>
+                                                <li class="ListMenuitem"><a href="#">Modificar Documento de Medição</a></li>
+                                            </ul>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="divDisplayOrders">
+                            <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem </h4>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <div style="width:100%;">
+                                    <a class="button" itag="btnBack" style="float:left;width:10%;">Voltar</a>
+                                    <a class="button" itag="btnExecute" style="float:left;width:14%;">Executar</a>
+                                </div>
+                                <div class="clearing"> </div>
+                                <div class="form-group" style="margin-left: 0px !important; margin-top: 15px;">
+                                    <label class="col-sm-3 control-label" for="demo-is-inputsmall" data-role="none">Nº
+                                        ordem</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtOrderNumber"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            value="8000004821" imapvalue="B" name="txt2" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Centro de Trabalho</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtCentroDeTrabalho"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txt3" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Nº Equipamento</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtEquipmentNumber"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txtEquipmentNumber" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Nº Inventario</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input data-role="none" id="txtInventoryNumber"
+                                            class="form-control input-sm" type="text" irequired="true" imapvalue="A"
+                                            name="txtInventoryNumber" maxlength="12" /></div>
+                                </div>
+                                <div class="clearing"></div>
+                                <div class="form-group" style="margin-left: 0px !important;"><label class="col-sm-3 control-label"
+                                        for="demo-is-inputsmall" data-role="none">Local de Instalação</label>
+                                    <div class="col-sm-6" style="width: 55%;"><input style="width: 100%;" id="txtLocalDeInstalação"
+                                            data-role="none" class="form-control input-sm" type="text" maxlength="18"
+                                            imapvalue="C" name="txt3" /></div>
+                                </div>
+
+
+                                <div id="showData"></div>
+                                <div class="clearing"></div>
+
+                            </div>
+                        </div>
+
+                        <div id="divMenu">
+                            <div class="clearing"></div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordens </h4>
+                            </div>
+                            <div class="panel-body">
+                                <div>
+                                    <a class="button" itag="btnBackGrid" style="float:left;width:10%;">Voltar</a>
+                                    <a class="button" itag="btnDisplayOrder" style="float:left;width:14%;">Exibir Ordem</a>
+                                </div>
+                                <div class="clearing"> </div>
+                                <div style="width:730px; overflow:scroll; margin-top: 15px;" id="gird">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="clearing"> </div>
+                        <div class="ProcLogonShortcutContainer">
+                            <div class="ProcLogonShortcutTitle" style=""> <label class="lblProcLogonShortcut"> Logon
+                                    Shortcut </label> </div>
+                            <div class="LogonShortcutSelection">
+                                <div class="styled-select"> <select name="drpLogonShortcut" data-theme="b" class="drpProcLogonShortcut"
+                                        id="drpLogonShortcut" data-native-menu="true"></select> </div> <a id="btnRefresh"
+                                    class="reloadLogonShortcut ui-link ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all"
+                                    data-inline="true" data-role="button" data-theme="b" data-iconpos="notext"
+                                    data-icon="refresh" role="button"></a>
+                                <div style="clear: both;"> </div>
+                            </div>
+                        </div>
+                        <div id="BannerDiv" style="display: none" class="btncontainer padding colorborderNew">
+                            <div> <img id="imgBanner" src="" style="width: 600px; height: 80px; float: left; display: none" />
+                            </div>
+                        </div>
+                        <div class="clearing"> </div>
+                        <div style="clear: both">
+                            <div itag="fldstResp">
+                                <div itag="dvSapRetTab"> </div>
+                                <div itag="dvAction" class="colorborderNew padding"> </div>
+                                <div itag="dvMsg"> </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--divDisplaySecurityFormCheck-->
+                    <form method="post" action="" id="Form20181016150505334" ifiletype="BAPI/RFM" itcode="ZPMF_CHECK_ORDER"
+                        title="CHECK_ORDER"=" id=" Form20181016150505334" ifiletype="BAPI/RFM" itcode="ZPMF_CHECK_ORDER"
+                        title="CHECK_ORDER"" class=" form-horizontal"> <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="CHECK_ORDER.iff" /> <input type="hidden"
+                            itag="returntables" value="ET_MSG" /> <input type="hidden" itag="pdataid" value="" />
+                        <input id="txtNrOrder" data-role="none" class="form-control input-sm" type="text" imapvalue="A"
+                            name="txt1" maxlength="12" style="display: none;" />
+                        <div itag="tblDataDE" id="divDisplaySecurityFormCheck">
+                            <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem - Form. Segurança </h4>
+                            </div>
+                            <div class="panel-body">
+                                <div>
+                                    <a class="buttonGridPg" itag="btnConfirm_SecurityFormCheck" style="float:left;width:30%;">Concordo/Ciente</a>
+                                    <a class="buttonGridPg" itag="btnBack_SecurityFormCheck" style="float:left;width:18%;">Cancelar</a>
+                                    <a class="buttonGridPg" itag="btnWARRANTY_SecurityFormCheck" style="width:30%;">Exibir
+                                        Garantia</a>
+                                </div>
+                                <div style="overflow-y: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                    <table itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                        <thead class="ui-bar-b">
+                                            <tr>
+                                                <th imatno="Texto de mensagem">Aviso</th>
+                                                <th imatno="Nº equipamento">cod</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <div class="datacontent" style="width:100% !important; min-width: 100% !important"></div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--divDisplayGetText-->
+                    <form method="post" action="" id="Form20181024111116308" ifiletype="BAPI/RFM" itcode="BAPI_ALM_ORDER_GET_DETAIL"
+                        title="GET_TEXTS"=" id=" Form20181024111116308" ifiletype="BAPI/RFM" itcode="BAPI_ALM_ORDER_GET_DETAIL"
+                        title="GET_TEXTS"" class=" form-horizontal"> <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="GET_TEXTS.iff" /> <input type="hidden" itag="returntables"
+                            value="ET_TEXTS,ET_TEXT_LINES,RETURN" /> <input type="hidden" itag="pdataid" value="" />
+                        <!-- <div id="divDisplayGetText">
+                                <div class="clearing"> </div>
+                            <div class="panel-heading">
+                                <h4 style="font-size: 20px !important; background-color:#cccccc !important;" class="panel-title">
+                                    Exibir Ordem - Texto Descritivo </h4>
+                            </div>
+                            <div class="panel-body">
+                            <a class="buttonGridPg" itag="btnBack_Get_Text" style="width:18%; ">Voltar</a>
+                            <br />
+                            <label id="lblGetText" />
+                        </div>
+
+                        </div> -->
+
+                    </form>
+
+                    <!--divDisplayGet_Warranty-->
+                    <form method="post" action="" id="Form20181016100404381" ifiletype="BAPI/RFM" itcode="ZPMF_GET_WARRANTY"
+                        title="GET_WARRANTY"=" id=" Form20181016100404381" ifiletype="BAPI/RFM" itcode="ZPMF_GET_WARRANTY"
+                        title="GET_WARRANTY"" class=" form-horizontal"> <input type="hidden" itag="detailtables" value="" />
+                        <input type="hidden" itag="processfilename" value="GET_WARRANTY.iff" /> <input type="hidden"
+                            itag="returntables" value="ET_WARRANTY" /> <input type="hidden" itag="pdataid" value="" />
+
+                        <div itag="tblDataDE" id="divDisplayGet_Warranty">
+                            <div>
+                                <a class="buttonGridPg" itag="btnBack_Warranty" style="width:30%;">Voltar</a>
+                            </div>
+                            <div class="divGrid" style="overflow: scroll!important; -webkit-overflow-scrolling: touch!important;">
+                                <table id="tableGrid" itable="tblDataDE" cellpadding="5" cellspacing="0" border="0">
+                                    <thead class="ui-bar-b">
+                                        <tr>
+                                            <th imatno="Nº da garantia-modelo" style="min-width: 200px;">Nº da
+                                                garantia-modelo</th>
+                                            <th imatno="Nº item garantia" style="min-width: 100px;">Nº item garantia</th>
+                                            <th imatno="Nº de serviço" style="min-width: 85px;">Nº de serviço</th>
+                                            <th imatno="Denominação para a referência" style="min-width: 300px;">Denominação
+                                                para a referência</th>
+                                            <th imatno="Denominação caract." style="min-width: 200px;">Denominação
+                                                caract.</th>
+                                            <th imatno="Valor delta ctdor.garantia" style="min-width: 150px;">Valor
+                                                delta ctdor.garantia</th>
+                                            <th imatno="Unid.medida garant.início ctdor." style="min-width: 160px;">Unid.medida
+                                                garant.início ctdor.</th>
+                                            <th imatno="Contador de garantia" style="min-width: 200px;">Contador de
+                                                garantia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="clearing"> </div>
+            <!-- <ul id="MenuAction" class="mfb-component--br mfb-zoomin" data-mfb-state="close">
+                <div class="FloatingButtonMenuDiv"> </div>
+                <li class="mfb-component__wrap"> <a id="MainButton" href="#" class="mfb-component__button--main ui-bar-b">
+                        <img src="../../../new_images/ellipsis.png" alt="" class="mfb-component__main-icon--resting ion-plus-round" />
+                        <img src="../../../new_images/cross2.png" alt="" class="mfb-component__main-icon--active ion-close-round" />
+                    </a>
+                    <ul class="mfb-component__list">
+                        <li><a formid="Form20181004192116851" itag="btnSendToSAP" href="#" data-mfb-label="Send to SAP"
+                                class="mfb-component__button--child ui-bar-d"><img src="../../../new_images/action-btn-sendtosap.png"
+                                    alt="" class="mfb-component__child-icon ion-social-github" /></a></li>
+                        <li><a href="#" formid="Form20181004192116851" itag="btnTest" data-mfb-label="Test" class="mfb-component__button--child ui-bar-d"><img
+                                    src="../../../new_images/action-btn-test.png" alt="" class="mfb-component__child-icon ion-social-octocat" /></a></li>
+                        <li><a href="#" formid="Form20181004192116851" itag="btnSendForReview" data-mfb-label="Send for Review"
+                                class="mfb-component__button--child ui-bar-e"><img src="../../../new_images/action-btn-review.png"
+                                    alt="" class="mfb-component__child-icon ion-social-twitter" /></a></li>
+                        <li><a href="#" formid="Form20181004192116851" itag="btnSave" data-mfb-label="Save" class="mfb-component__button--child ui-bar-b"><img
+                                    src="../../../new_images/action-btn-save.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a></li>
+                        <li style='display:none;'><a href="#" formid="Form20181004192116851" itag="btnDelete"
+                                data-mfb-label="Delete" class="mfb-component__button--child ui-bar-f"><img src="../../../new_images/action-btn-delete.png"
+                                    alt="" class="mfb-component__child-icon ion-social-twitter" /></a></li>
+                        <li><a href="#" formid="Form20181004192116851" itag="btnReset" data-mfb-label="Reset" class="mfb-component__button--child ui-bar-f"><img
+                                    src="../../../new_images/action-btn-reset.png" alt="" class="mfb-component__child-icon ion-social-twitter" /></a></li>
+                    </ul>
+                </li>
+            </ul> -->
+        </div>
+        <div id="PageDesc"> </div>
+        <script>
+            ProcessFileScripts.push("../Js/PMMOBILESPRINT.js");
+            for (var i = 0; i < ProcessFileScripts.length; i++) {
+                document.write("<script type='text/javascript' src='" + ProcessFileScripts[i] + "?t=" + Date.now() + "'><\/script>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>

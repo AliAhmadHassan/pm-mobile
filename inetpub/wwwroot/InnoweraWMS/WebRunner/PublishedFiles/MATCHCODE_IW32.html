@@ -1,0 +1,817 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!-- <![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title> MATCHCODE_IW32</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <script type="text/javascript">
+        document.write('<link href="../../css/style.css?iwms=' + new Date().getTime() + '" rel="stylesheet" />');
+    </script>
+    <link rel="icon" type="image/png" href="../../images/favicon.ico">
+    <!--    **********************************************************    In development, use the LESS files and the less.js compiler    instead of the minified CSS loaded by default.    **********************************************************    <link rel="stylesheet/less" href="assets/less/admin/module.admin.page.index.less" />    -->
+    <!--[if lt IE 9]><link rel="stylesheet" href="../../assets/components/library/bootstrap/css/bootstrap.min.css" /><![endif]-->
+    <link href="../../assets/css/admin/module.admin.page.index.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/innerpage_common_style_v3.css" />
+    <link href="../../assets/components/library/jquery-ui/css/jquery-ui.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        document.write('<link href="../../themes/defult.css?iwms=' + new Date().getTime() + '" rel="stylesheet" />');
+    </script>
+    <script type="text/javascript">
+        document.write('<link href="../Content/publishedfile.css?iwms=' + new Date().getTime() +
+            '" rel="stylesheet" />');
+    </script>
+    <script src="../../Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-migrate-1.1.0.min.js" type="text/javascript"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>    <![endif]-->
+    <script type="text/javascript" src="../../assets/components/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v=v1.2.3"></script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/fileconfig.js?iwms=' + new Date().getTime() +
+            '"\><\/script>');
+    </script>
+    <script src="../../Scripts/jquery-ui-1.10.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/innowera.common.js?iwms=' + new Date().getTime() +
+            '"\><\/script>');
+    </script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/innowera.saplogon.js?iwms=' + new Date().getTime() +
+            '"\><\/script>');
+    </script>
+    <script src="../../js/bootbox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="../../Scripts/iwmsversion.js?iwms=' + new Date().getTime() +
+            '"\><\/script>');
+    </script>
+    <script src="../../Scripts/jquery.textchange.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.quicksearch.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.dataTables.min.js" type="text/javascript"></script>
+    <!--%JQGRIDFORLOOKUP. This Will Be Replaced. Do not Remove or Modify This Line.%-->
+    <script src="../../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.2.3"></script>
+    <link href="../../slider/jquery.fullPage.css" rel="stylesheet" />
+    <script src="../../slider/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        var deviceid = "WebRunner";
+        if (username == null || username == "") {
+            UserLogout();
+        }
+        $(document).ready(function () {
+            if (username != null) {
+                $("#lblUserName").text(DisplayName);
+            }
+            BindDiv();
+            DefaultSystem();
+            var loNow = new Date();
+            $("#ProcessIconFile").attr("src", "../Icons/MATCHCODE_IW32.png?" + loNow.getTime());
+            $('#ilogo').click(function () {
+                window.parent.location = "../../Innowera/ProcessList.aspx";
+            });
+            ReviewProccessData_V2(function (_result) {});
+        });
+
+        function toggleChevron(e) {
+            $(e.target).prev('.panel-heading').find("i.indicator").toggleClass(
+                'glyphicon-chevron-down glyphicon-chevron-up');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+    </script>
+    <!--[if IE]>    <script type="text/javascript">    var console = { log: function() {} };    </script>    <![endif]-->
+    <link rel="stylesheet" href="../../css/mordentab.css" />
+    <link rel="stylesheet" href="../../responsivepagemenu/css/normalize.min.css" />
+    <link rel="stylesheet" href="../../responsivepagemenu/css/tabs-to-dropdown.css" />
+    <link href="../../css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/fixedHeader.bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <script src="../../assets/components/plugins/nicescroll/jquery.nicescroll.min.js?v=v1.2.3"></script>
+    <script src="../../Scripts/jquery.showLoading.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="../../js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../js/dataTables.fixedHeader.min.js" type="text/javascript"></script>
+    <script src="../../js/dataTables.responsive.min.js" type="text/javascript"></script>
+</head>
+
+<body style="background-color:#f5f5f5 !important;">
+    <!--  --> <input id="hdnFileVersion" type="hidden" value="1" /> <input id="hdnTemplateSheetName" type="hidden"
+        value="" />
+    <div class="navbar navbar-fixed-top navbar-primary main" role="navigation" style="border-bottom: 3px solid rgb(0, 136, 204);outline-style: solid;">
+        <div class="navbar-header pull-left">
+            <div class="navbar-brand"> <a class="appbrand" style="margin-left:20px;" href="../../Innowera/ProcessList.aspx"><img
+                        src="../../images/logo.png" alt="Innowera" id="ilogo"></a> </div>
+            <ul class="nav navbar-nav navbar-left" style="margin: 0 !important;">
+                <li class="hidden-xs" style="padding: 0 !important;">
+                    <p style="margin: 0 !important; color: #fff; padding-top: 23px; margin-left: -15px !important;" id="lblVersion">5.1.1</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ProcessTitle_position">
+            <div class="text-center ProcessTitle_position">
+                <h1 class="lblProcessTitle"> MATCHCODE_IW32 </h1>
+            </div>
+        </div>
+        <script src="../../Scripts/prefixfree.min.js"></script>
+        <div class="material-dropdown" style="float: right !important;"> <a data-toggle="dropdown" class="dropdown-toggle user dropdown-hover"
+                id="aLogo" runat="server"><img id="imgdisplaytext" src="../../images/8 (1).jpg" alt="" class="img-circle" /><span
+                    class="hidden-xs hidden-sm" id="lblUserName"> &nbsp;&nbsp;&nbsp;Administrator</span></a>
+            <figure style="display:none;"></figure>
+            <figure style="display:none;" class="middle"></figure>
+            <p class="cross" style="display:none;">x</p>
+            <figure style="display:none;"></figure>
+            <ul class="dropdown">
+                <li><a href="#" onclick="UserProfile();"><img src="../../images/menu-icon/user.png" />&nbsp;User
+                        Profile</a></li>
+                <li><a href="#" style="float:left;"><img src="../../images/menu-icon/mapper.png" />&nbsp;Show Mapper</a><label
+                        class="switch"><input type="checkbox" id="mapswitch" onclick="ChangeMappingDesc();"><span class="slider round"></span></label>
+                <li><a href="#" onclick="UserLogout();"><img src="../../images/menu-icon/Logout.png" />&nbsp;Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var materialdropdown = document.querySelector('.material-dropdown'),            middle = document.querySelector('.middle'),            cross = document.querySelector('.cross'),            dropdown = document.querySelector('.dropdown');        materialdropdown.addEventListener('click', function () {            middle.classList.toggle('active');            cross.classList.toggle('active');            dropdown.classList.toggle('active');        })    </script>
+    <div id="content">
+        <div class="row">
+            <div class="col-lg-12 nopadding responsive_dropdown_1" style="position: fixed;right: 0;left: 0;z-index: 1020;">
+                <div class="content-heading border-bottom"> <span id="title" style="display:none"> MATCHCODE_IW32
+                    </span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-9 col-sm-9 col-xs-9 nopadding responsive_dropdown">
+                    <div class="tabs-to-dropdown-1">
+                        <nav class="tab-bar">
+                            <ul>
+                                <li><input class="btnBack submitbtn_top_menubar" itag="btnBack" title="Clicking on this button will reset the page."
+                                        value="Back" type="button" onclick="javascript:GoBack();" />
+                                <li><input class="btnReset submitbtn_top_menubar" itag="btnReset" title="Clicking on this button will reset the page."
+                                        value="Reset" type="button" onclick="return Reset('Form20181205111621500');" />
+                                <li><input class="SaveOffline submitbtn_top_menubar" itag="SaveOffline" title="Clicking on this button will save this record as offline."
+                                        style="display: none;" value="Save" type="button" onclick="SubmitPage(false,false,true,'Form20181205111621500',true);customSubmit('Form20181205111621500');" /></li>
+                                <li><input class="DeleteOffline submitbtn_top_menubar" itag="DeleteOffline" title="Clicking on this button will delete this record."
+                                        style="display: none;" value="Delete" type="button" onclick="DeleteInbox('Form20181205111621500');" /></li>
+                                <li><input class="SendforReview submitbtn_top_menubar" itag="SendforReview" title="Clicking on this button will send this record for review."
+                                        value="Send for review" style="display: none;" type="button" onclick="SubmitPage(false,true,false);customSubmit('Form20181205111621500');" /></li>
+                                <li><input class="btnSubmit submitbtn_top_menubar" itag="btnSubmit" title="Send to SAP"
+                                        value="Send to SAP" type="button" onclick="SubmitPage(false,false,false);customSubmit('Form20181205111621500');" /></li>
+                            </ul>
+                        </nav>
+                        <div class="dropdown"> <button class="dropdown-toggle">More <span class="fa fa-angle-down"></span></button>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-3 nopadding top_menu" style="text-align:right;background-color: #E7F3FF;height: 51px;">
+                    <input class="submitbtn_top_menubar default" type="button" itag="inserttestdata" value="Default Values" />
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div style="height:50px;"></div>
+            <div class="clearfix"></div>
+            <div class="body_innerpage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                        <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12">
+                            <div class="box">
+                                <div style="width:70%;float:left;">
+                                    <p style="font-size:11px;overflow:hidden !important;text-overflow:ellipsis !important;"></p>
+                                </div>
+                                <div style="width:30%;float:right;">
+                                    <!--<span id="filecreatedate">-->
+                                    <p style="text-align: right;font-size: 11px;" id="spnModifiedDate"></p>
+                                    <!--</span>-->
+                                </div>
+                                <div class="clearfix"></div>
+                                <form method="post" action="" id="Form20181205111621500" ifiletype="BAPI/RFM" itcode="ZPMF_IW33_EXIBIR_ORDEM"
+                                    title="MATCHCODE_IW32"> <input type="hidden" itag="DetailTables" value="" />
+                                    <input type="hidden" itag="ProcessFileName" value="MATCHCODE_IW32.iff" />
+                                    <input type="hidden" itag="returnTables" value="ET_ANEXOS,ET_COMPONENTS,ET_DDL_CENTRO_TRABALHO,ET_DDL_GRP_PLANEJ,ET_DDL_TIPO_ATIV_MANUT,ET_OPERATIONS,ET_TEXTS,ET_TEXT_LINES" />
+                                    <input type="hidden" itag="pdataid" value="" />
+                                    <div>
+                                        <div class="panel-group" id="accordion1">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse"
+                                                            data-parent="#accordion1" href="#Header" tabindex="-1">Header</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="Header" itable="header" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p class="filelabledesc">Nº ordem</p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <input type="text" class="form-control" style="width:210px;display: inline-block;float: left;"
+                                                                        maxlength="12" imapvalue="A" name="txt1" />
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div>
+                                        <!--FOOTER-->
+                                        <div>
+                                            <div class="panel-group" id="accordion3">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse"
+                                                                href="#ReturnField" tabindex="-1">SAP Return
+                                                                Fields/Tables</a></h4>
+                                                    </div>
+                                                    <div id="ReturnField" class="panel-collapse in">
+                                                        <div class="panel-body" style="padding: 10px !important;">
+                                                            <div class="widget-body" itable="tblDownloadedData">
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Denominação do tipo de
+                                                                            atividade de manutenção</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="P" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="30" srno="0" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nome do grupo de
+                                                                            planejamento de manutenção</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="S" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="18" srno="1" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Denominação breve</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="V" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="40" srno="2" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Denominação do objeto
+                                                                            técnico</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="X" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="40" srno="3" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Denominação do objeto
+                                                                            técnico</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="Z" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="40" srno="4" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nº inventário</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AA" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="25" srno="5" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Início da avaria
+                                                                            (data)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AE" style="width: 150px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="8" srno="6" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Fim da avaria (data)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AF" style="width: 150px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="8" srno="7" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Início da avaria
+                                                                            (hora)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AG" style="width: 120px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="6" srno="8" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Fim da avaria (hora)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AH" style="width: 120px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="6" srno="9" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Código: parada</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AI" style="width: 45px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="1" srno="10" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Unidade de tempo para
+                                                                            a duração da parada</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AK" style="width: 75px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="3" srno="11" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nome do autor da nota</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AL" style="width: 210px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="12" srno="12" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Duração da parada</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AJ" style="width: 198px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="11.2" srno="13" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Rua</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BL" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="60" srno="14" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nº</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BM" style="width: 180px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="10" srno="15" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Bairro</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BN" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="40" srno="16" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Código postal da
+                                                                            localidade</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BO" style="width: 180px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="10" srno="17" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Cidade</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BP" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="40" srno="18" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Chave do país</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BQ" style="width: 75px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="3" srno="19" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Região (estado
+                                                                            federal, estado federado, província,
+                                                                            condado)</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BS" style="width: 75px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="3" srno="20" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Denominação do país</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BR" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="15" srno="21" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Denominação</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="BT" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="20" srno="22" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nº ordem</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="D" style="width: 210px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="12" srno="23" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Tipo de ordem</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="C" style="width: 90px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="4" srno="24" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Centro de planejamento
+                                                                            de manutenção</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="R" style="width: 90px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="4" srno="25" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Centro de trabalho
+                                                                            responsável para medidas de manutenção</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="T" style="width: 150px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="8" srno="26" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Centro relativo ao
+                                                                            centro de trabalho responsável</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="U" style="width: 90px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="4" srno="27" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Tipo de atividade de
+                                                                            manutenção</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="O" style="width: 75px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="3" srno="28" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Grupo de planejamento
+                                                                            para serviços cliente e manutenção</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="Q" style="width: 75px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="3" srno="29" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Local de instalação</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="W" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="30" srno="30" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nº equipamento</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="Y" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="18" srno="31" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Data-base do início</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AB" style="width: 150px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="8" srno="32" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Data-base do fim</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AC" style="width: 150px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="8" srno="33" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Texto breve</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="E" style="width: 250px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="40" srno="34" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                                <div class="innerB">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                        <p class="filelabledesc">Nº da nota</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                        <input type="text" imapvalue="AD" style="width: 210px; background-color: #E6E6E6;"
+                                                                            class="form-control" readonly="readonly"
+                                                                            ilength="12" srno="35" /> </div>
+                                                                    <div class="clearfix"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--FOOTER-->
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                                    <div id="dvProcessLogon" style="display:none">
+                                        <div class="clearfix">&nbsp;</div>
+                                        <div class="panel-group" id="accordion7">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion7"
+                                                            href="#LogonShortcut" tabindex="-1">Logon Shortcut</a></h4>
+                                                </div>
+                                                <div id="LogonShortcut" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div id="dvLogonShortcuts" class="innerB">
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <p><strong>Logon Shortcut</strong></p>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                                    <select id="cmbLogonList" class="form-control"
+                                                                        style="width:80%;float:left;"></select>
+                                                                    <img id="RefreshLogons" src="../../Content/images/refresh_24.png"
+                                                                        alt="Refresh List" title="Refresh List" onclick="DefaultSystem();"
+                                                                        style="float:left;margin-left:10px;margin-top:5px;cursor:pointor;" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="dvProcessMessage" style="display:none;">
+                                        <div class="panel-group" id="accordion6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion6"
+                                                            href="#Message" tabindex="-1">Message</a></h4>
+                                                </div>
+                                                <div id="Message" class="panel-collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="widget-body">
+                                                            <div itag="dvFootMsg">
+                                                                <div style="display: none;" itag="fldstResp">
+                                                                    <div>
+                                                                        <div style="clear: both;"> </div>
+                                                                        <div itag="dvSapRetTab" style="display: none;">
+                                                                            <div class="col-lg-12">
+                                                                                <p style="font-size: 14px;"><strong>Return
+                                                                                        SAP Messages Table</strong></p>
+                                                                            </div>
+                                                                            <div class="col-lg-12">
+                                                                                <div itag="dvReturnSapMsg" style="overflow: auto; padding-left: 5px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                        <div style="clear: both;"> </div>
+                                                                        <div itag="fldRStat" style="display: none;">
+                                                                            <fieldset>
+                                                                                <legend>Run Status</legend>
+                                                                                <div itag="dvStatus"> </div>
+                                                                            </fieldset>
+                                                                            <div style="clear: both;"> </div>
+                                                                        </div>
+                                                                        <div style="display: none;" itag="ActionMsgContainer">
+                                                                            <div style="padding: 10px;background-color: inherit;">
+                                                                                <div class="col-lg-1">
+                                                                                    <p style="font-size: 14px;">
+                                                                                        <strong style="color: red;">Action
+                                                                                            :</strong> </p>
+                                                                                </div>
+                                                                                <div class="col-lg-11">
+                                                                                    <div itag="ActionMsg" class="ResponseMessage">
+                                                                                        <p> </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="clearfix"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div itag="dvSysMsg" style="display: none;">
+                                                                            <div class="col-lg-12">
+                                                                                <div itag="dvMsg" class="ResponseMessage">
+                                                                                </div>
+                                                                                <div itag="dvUniqueID" class="ResponseMessage">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="clearfix"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div id="fullpage" style="display:none;margin-top: 5px;">
+                                        <div class="section" id="divSection"></div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(document).keypress(function (event) {
+                                            if (event.which == '13') {
+                                                event.preventDefault();
+                                            }
+                                        });
+                                        $("#Form20181205111621500").validate({
+                                            rules: {},
+                                            messages: {},
+                                            submitHandler: function () {
+                                                var HeaderData = GetHeaderData(this);
+                                                var PageIsValid = validatepage(this);
+                                                if (PageIsValid) {
+                                                    var FooterData = GetFooterData(this);
+                                                    var ObjProcessData = {
+                                                        HeaderData: HeaderData,
+                                                        FooterData: FooterData,
+                                                        AdditonalData: null,
+                                                        AutoShowResult: true,
+                                                        IsUpdateOnly: false,
+                                                        IsDoNotDeleteFromDraftBox: false,
+                                                        IsDoNotSaveInSentbox: false
+                                                    };
+                                                    RunProcess_V2(ObjProcessData, this, function (result) {});
+                                                }
+                                                return false;
+                                            }
+                                        });
+                                        $("input[itag='inserttestdata']").bind("click", function (e) {
+                                            $('#Form20181205111621500 #Header input[imapvalue="A"]').val(
+                                                "8000004821");
+                                            $(".datepicker").each(function () {
+                                                DefaultDateCheck(SAPDateFormat, this);
+                                            });
+                                            isChanges = true;
+                                        });
+                                    </script>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div style="height:40px;">&nbsp;</div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dvSAP"></div>
+    <div id="dvSAPAdd"></div>
+    <div class="modal fade" id="dvDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header"> <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span> </button>
+                    <h4 class="modal-title" id="titlelookup"> Lookup </h4>
+                </div> <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-lg-12 col-md-3 col-sm-12 col-xs-12"> </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-lg-12 col-md-3 col-sm-12 col-xs-12">
+                                <div class="">
+                                    <div itag="lookupdialog" class="table-responsive">
+                                        <table id="divlookupcontent" class="table">
+                                            <tr>
+                                                <td> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div> <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <div style="float: left;" id="Pager"> </div> <input class="btn btn-primary" type="button" value="Select"
+                        style="float:right;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="hidden-print">
+        <div class="copy" id="currLogon_parent">Default System: <a onclick="LoadAvailableLogonForCurrentUser();"
+                clientidmode="Static" id="currLogon" href="#"></a></div>
+
+    </div>
+    <div class="clearfix"></div>
+</body>
+
+</html>

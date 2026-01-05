@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="IW23_Download_Notification_In_Portuguese" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="IW23_Download_Notification_In_Portuguese">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <IW23_Download_Notification_In_Portuguese>
+    <ProcessFileName>IW23_Download_Notification_In_Portuguese.itf</ProcessFileName>
+    <FileName>IW23_Download_Notification_In_Portuguese.html</FileName>
+    <WebIconName>IW23_Download_Notification_In_Portuguese.png</WebIconName>
+    <MobileIconName>IW23_Download_Notification_In_Portuguese.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>Baixar e Atualizar Notificações</ShortDescription>
+    <LongDescription>Faça o download e Notificação de atualização usando Tcode IW23 e IW22
+</LongDescription>
+    <ProcessType>Transaction</ProcessType>
+    <ProcessCode>IW23</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>5/10/2017 9:16:21 AM</CreatedDate>
+    <JSFileName>IW23_Download_Notification_In_Portuguese.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>RIWO00-QMNUM</Field1>
+    <Field2>RIWO00-QMNUM</Field2>
+    <Default1>PublishDummyFolder</Default1>
+    <Default2>Baixar e Atualizar Notificações-10052017024457.txt</Default2>
+  </IW23_Download_Notification_In_Portuguese>
+</NewDataSet>

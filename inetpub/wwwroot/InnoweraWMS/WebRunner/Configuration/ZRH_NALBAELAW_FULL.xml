@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ZRH_NALBAELAW_FULL">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ZRH_NALBAELAW_FULL>
+    <ProcessFileName>ZRH_NALBAELAW_FULL.iff</ProcessFileName>
+    <FileName>ZRH_NALBAELAW_FULL.html</FileName>
+    <WebIconName>ZRH_NALBAELAW_FULL.png</WebIconName>
+    <MobileIconName>ZRH_NALBAELAW_FULL.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>ZRH_NALBAELAW_FULL</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>ZRH_NALBAELAW</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>6/25/2019 2:36:38 PM</CreatedDate>
+    <JSFileName>ZRH_NALBAELAW_FULL.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>E0-52-2B-14-78-E6-40-A3-76-89-D1-29-AD-9A-1C-4B-77-C3-54-5E-B3-73-97-08-1E-7F-29-AE-16-36-CD-E9-28-0C-68-1E-3F-C4-71-1B-8C-70-DC-D9-44-84-81-40-14-EF-CF-C3-04-CD-8C-FD-0F-54-E6-33-92-11-58-42</WebFileHash>
+    <IosFileHash>5C-E6-E7-E2-DF-E1-72-A3-F5-6D-4C-10-F4-16-A4-98-FA-83-12-97-46-95-37-F0-3A-AA-B3-04-B1-26-E5-C4-8C-EC-DF-70-D4-1B-18-AE-28-51-28-07-27-48-71-01-8D-6B-DF-A0-93-43-B4-5F-46-02-A5-6E-54-43-1B-DF</IosFileHash>
+    <AndroidFileHash>B1-31-53-21-E3-A5-9E-24-A2-09-63-21-9D-85-CC-61-42-EF-5D-3E-51-E6-64-F0-27-72-D1-10-CB-24-33-6D-6E-B2-D6-09-BF-5C-C1-B0-7F-0D-16-E2-C1-2A-C3-47-27-35-FE-BF-D3-BA-B4-66-EF-6B-94-DC-F7-00-A5-61</AndroidFileHash>
+    <Version>5.2.9</Version>
+  </ZRH_NALBAELAW_FULL>
+</NewDataSet>

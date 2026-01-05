@@ -1,0 +1,177 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="FB08">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidFileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <FB08>
+    <ProcessFileName>FB08.itf</ProcessFileName>
+    <FileName>FB08.html</FileName>
+    <WebIconName>FB08.png</WebIconName>
+    <MobileIconName>FB08.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>FB08</ShortDescription>
+    <LongDescription />
+    <ProcessType>Transaction</ProcessType>
+    <ProcessCode>FB08</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>6/25/2019 4:40:24 PM</CreatedDate>
+    <JSFileName>FB08.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>RF05A-BELNS</Field1>
+    <Field2>RF05A-BELNS</Field2>
+    <Default1>PublishDummyFolder</Default1>
+    <Default2>FB08-25062019014017.txt</Default2>
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebFileHash>18-92-2F-5F-6F-66-EC-97-34-09-25-32-62-D0-3E-41-2D-59-99-D2-FA-3A-03-0C-23-E0-A7-B0-78-61-A2-F2-31-DE-32-60-96-1C-80-8D-01-A0-EA-7E-0A-A5-C7-DB-D7-2E-1E-23-E5-AE-B2-86-BC-D1-C4-66-43-F3-B6-21</WebFileHash>
+    <IosFileHash>78-1A-42-57-A2-8F-F8-C3-72-E3-A9-BD-C9-C8-99-EF-DC-3D-90-73-83-D7-17-51-12-2B-07-DE-4C-B3-E1-68-D9-FC-F2-18-52-01-72-A3-CA-3A-04-47-B2-1E-89-D8-51-65-4F-73-38-B0-03-8B-E8-38-36-5A-90-A7-62-2D</IosFileHash>
+    <AndroidFileHash>F6-E6-C0-A7-71-6C-A3-FF-59-91-55-0C-2B-A7-CB-49-EA-4D-1A-60-AA-5F-F4-D1-43-68-E6-6E-55-C2-30-1B-28-DD-84-86-5A-4E-3A-E5-96-80-FA-27-06-A2-9C-27-EB-62-F5-71-9A-25-D7-02-79-D0-4D-EC-A2-52-9C-F2</AndroidFileHash>
+    <Version>5.2.9</Version>
+  </FB08>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>RF05A-BELNS</FieldFullName>
+    <FieldName>BELNS</FieldName>
+    <TabName>RF05A</TabName>
+    <Description>RF05A-BELNS</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>BKPF-BUKRS</FieldFullName>
+    <FieldName>BUKRS</FieldName>
+    <TabName>BKPF</TabName>
+    <Description>BKPF-BUKRS</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>4</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>RF05A-GJAHS</FieldFullName>
+    <FieldName>GJAHS</FieldName>
+    <TabName>RF05A</TabName>
+    <Description>RF05A-GJAHS</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>4</FieldID>
+    <FieldFullName>UF05A-STGRD</FieldFullName>
+    <FieldName>STGRD</FieldName>
+    <TabName>UF05A</TabName>
+    <Description>UF05A-STGRD</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>5</FieldID>
+    <FieldFullName>BSIS-BUDAT</FieldFullName>
+    <FieldName>BUDAT</FieldName>
+    <TabName>BSIS</TabName>
+    <Description>BSIS-BUDAT</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>20</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+</NewDataSet>

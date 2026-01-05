@@ -1,0 +1,261 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="IW32_NOTIF_DATA_MODIFY">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowID" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowTemplateID" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAllowNote" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOffline" type="xs:string" minOccurs="0" />
+                <xs:element name="IsBackOffice" type="xs:string" minOccurs="0" />
+                <xs:element name="IsApplyConfiguration" type="xs:string" minOccurs="0" />
+                <xs:element name="IsEasyWorkflow" type="xs:string" minOccurs="0" />
+                <xs:element name="IsSheet" type="xs:string" minOccurs="0" />
+                <xs:element name="IsFieldMap" type="xs:string" minOccurs="0" />
+                <xs:element name="WebMD5Hash" type="xs:string" minOccurs="0" />
+                <xs:element name="IosMD5Hash" type="xs:string" minOccurs="0" />
+                <xs:element name="AndroidMD5Hash" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SAPFields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FieldID" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldFullName" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldName" type="xs:string" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Datatype" type="xs:string" minOccurs="0" />
+                <xs:element name="FieldLength" type="xs:long" minOccurs="0" />
+                <xs:element name="FieldDecimalPrecision" type="xs:long" minOccurs="0" />
+                <xs:element name="IsRequired" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Lookup" type="xs:string" minOccurs="0" />
+                <xs:element name="IsbarcodeStatus" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SrNo" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DEFields">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <IW32_NOTIF_DATA_MODIFY>
+    <ProcessFileName>IW32_NOTIF_DATA_MODIFY.iff</ProcessFileName>
+    <FileName>IW32_NOTIF_DATA_MODIFY.html</FileName>
+    <WebIconName>IW32_NOTIF_DATA_MODIFY.png</WebIconName>
+    <MobileIconName>IW32_NOTIF_DATA_MODIFY.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>IW32_NOTIF_DATA_MODIFY</ShortDescription>
+    <LongDescription />
+    <ProcessType>BAPI/RFM</ProcessType>
+    <ProcessCode>BAPI_ALM_NOTIF_DATA_MODIFY </ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>12/26/2018 7:16:19 PM</CreatedDate>
+    <JSFileName>IW32_NOTIF_DATA_MODIFY.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>BREAKDOWN</Field1>
+    <Field2>BREAKDOWN</Field2>
+    <Default1 />
+    <Default2 />
+    <WorkflowID>0</WorkflowID>
+    <WorkflowTemplateID>0</WorkflowTemplateID>
+    <IsAllowNote>False</IsAllowNote>
+    <IsOffline>True</IsOffline>
+    <IsBackOffice>True</IsBackOffice>
+    <IsApplyConfiguration>False</IsApplyConfiguration>
+    <IsEasyWorkflow>False</IsEasyWorkflow>
+    <IsSheet>0</IsSheet>
+    <IsFieldMap>False</IsFieldMap>
+    <WebMD5Hash>80-35-06-A1-FD-64-2F-BA-D1-62-BB-AB-61-4C-83-BB</WebMD5Hash>
+    <IosMD5Hash>DD-4E-C4-33-F5-F9-81-B8-BB-13-43-6C-F8-46-4C-43</IosMD5Hash>
+    <AndroidMD5Hash>C3-F9-A4-7B-E7-56-FF-6A-8B-27-46-C4-67-2A-68-49</AndroidMD5Hash>
+    <Version>5.2.4</Version>
+  </IW32_NOTIF_DATA_MODIFY>
+  <SAPFields>
+    <FieldID>1</FieldID>
+    <FieldFullName>BREAKDOWN</FieldFullName>
+    <FieldName />
+    <TabName>BREAKDOWN</TabName>
+    <Description>Código: parada</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>0</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>2</FieldID>
+    <FieldFullName>STRMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNDATE</TabName>
+    <Description>Início da avaria (data)</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>1</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>3</FieldID>
+    <FieldFullName>STRMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNTIME</TabName>
+    <Description>Início da avaria (hora)</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>2</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>4</FieldID>
+    <FieldFullName>ENDMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNDATE</TabName>
+    <Description>Fim da avaria (data)</Description>
+    <Datatype>DateTime</Datatype>
+    <FieldLength>10</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>3</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>5</FieldID>
+    <FieldFullName>ENDMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNTIME</TabName>
+    <Description>Fim da avaria (hora)</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>6</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>4</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>6</FieldID>
+    <FieldFullName>BREAKDOWN</FieldFullName>
+    <FieldName />
+    <TabName>BREAKDOWN</TabName>
+    <Description>Info modificação p/respectivo campo dados utilização</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>5</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>7</FieldID>
+    <FieldFullName>STRMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNDATE</TabName>
+    <Description>Info modificação p/respectivo campo dados utilização</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>6</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>8</FieldID>
+    <FieldFullName>STRMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>STRMLFNTIME</TabName>
+    <Description>Info modificação p/respectivo campo dados utilização</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>7</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>9</FieldID>
+    <FieldFullName>ENDMLFNDATE</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNDATE</TabName>
+    <Description>Info modificação p/respectivo campo dados utilização</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>8</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>10</FieldID>
+    <FieldFullName>ENDMLFNTIME</FieldFullName>
+    <FieldName />
+    <TabName>ENDMLFNTIME</TabName>
+    <Description>Info modificação p/respectivo campo dados utilização</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>1</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>9</SrNo>
+  </SAPFields>
+  <SAPFields>
+    <FieldID>11</FieldID>
+    <FieldFullName>NUMBER</FieldFullName>
+    <FieldName />
+    <TabName>NUMBER</TabName>
+    <Description>Nº da nota</Description>
+    <Datatype>String</Datatype>
+    <FieldLength>12</FieldLength>
+    <FieldDecimalPrecision>0</FieldDecimalPrecision>
+    <IsRequired>false</IsRequired>
+    <Lookup />
+    <IsbarcodeStatus>false</IsbarcodeStatus>
+    <SrNo>10</SrNo>
+  </SAPFields>
+</NewDataSet>

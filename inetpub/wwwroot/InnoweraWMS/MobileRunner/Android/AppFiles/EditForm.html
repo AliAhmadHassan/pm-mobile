@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <title>Live Support</title>
+    <link rel="stylesheet" type="text/css" href="../../../AppFiles/EditForm.css">
+    </head>
+    <body>		
+		
+        <div class="header ui-bar-b">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="backbutton">
+                        <a href="" id="btnCloseLiveSupport" data-role="none">
+                            <div class="ImgPopupCloseButton"></div>
+                        </a>
+                    </td>
+                    <td class="titletop"><h1>Live Support</h1></td>
+                    <td class="morebutton"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="LivesupportOverflowMobileFix">
+            <div id="divRequestLiveSupport" class="tabs effect-3">
+                <!-- tab-title id="rdbWithInnowera" id="rdbSessionCode"-->
+                <input  data-role="none" type="radio" id="rdbWithCustomer" class="tab-3" name="serviceCall">
+                    <span action="rdbWithCustomer">Using Session Code</span>
+                    
+                    <input  data-role="none" type="radio" id="rdbWithInnowera" class="tab-1" name="serviceCall">
+                        <span action="rdbWithInnowera">With Innowera</span>
+                        
+                        <input  data-role="none" type="radio" id="rdbSessionCode" class="tab-2" name="serviceCall">
+                            <span action="rdbSessionCode">Using Session Code</span>
+                            
+                            <div class="line ease"></div>
+                            
+                            <!-- tab-content -->
+                            <div class="tab-content">
+                                <section id="newCaseCreationWithCustomer" data-role="none">
+									<div>
+										<div>
+											<label data-role="none" class="col-sm-12 control-label" for="demo-is-inputsmall" style="margin-bottom:6px;">Name</label>
+											<div class="col-sm-12">
+												<input type="text" data-role="none" maxlength="50" id="caseNameWithCustomer" class="form-control input-sm">
+											</div>
+										</div>
+										<div class="clearing"></div>
+										<div style="margin-top:10px;">
+											<label data-role="none" class="col-sm-12 control-label" for="demo-is-inputsmall" style="margin-bottom:6px;">Case Description</label>
+											<div class="col-sm-12">
+												<textarea data-role="none" class="form-control input-sm" maxlength="100" id="caseDescriptionWithCustomer" type="text"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="clearing"></div>
+                                </section>
+                                <section id="newCaseCreation" data-role="none">
+									<div>
+										<div>
+											<label data-role="none" class="col-sm-12 control-label" for="demo-is-inputsmall" style="margin-bottom:6px;">Name</label>
+											<div class="col-sm-12">
+												<input type="text" data-role="none" maxlength="50" id="caseName" class="form-control input-sm">
+											</div>
+										</div>
+										<div class="clearing"></div>
+										<div>
+											<label data-role="none" class="col-sm-12 control-label" for="demo-is-inputsmall" style="margin-bottom:6px;">Case Description</label>
+											<div class="col-sm-12">
+												<textarea data-role="none" class="form-control input-sm" maxlength="100" id="caseDescription" type="text"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="clearing"></div>
+                                </section>
+                                <section id="joinExistingSession" data-role="none">
+									<div class="LiveSupportSingleTextboxFix">
+										<div>
+											<label class="col-sm-12 control-label" for="demo-is-inputsmall" style="margin-bottom:6px;">Session Code</label>
+											<div class="col-sm-12">
+												<input type="text" maxlength="50" id="sessionCode" autocapitalize="off" data-role="none" class="form-control input-sm">
+											</div>
+										</div>
+										<div class="clearing"></div>
+									</div>
+									<div class="clearing"></div>
+                                </section>
+                                <button id="btnLiveSupport" tvoption="0" class="btnLiveSupport ui-bar-b" data-role="none"data-role="none" type="button">
+                                    Request Live Support
+                                </button>
+                                
+                            </div>
+						</div>
+            <div class="SupportCloseDemo" style="display:none">
+				<div class="LivesupportMessage">
+					Your Live Support Session is requested. Pelase wait for an agent to come. <br/>
+					You may close this Live Support Session any time by draggin Live Support <br/>
+					icon to an X mark as shown below.
+				</div>
+                <!-- <img id="close_image"  alt="Innowera Logo" src="images/livesupport_close.png"/> -->
+            </div>
+        </div>
+
+    </body>
+</html>

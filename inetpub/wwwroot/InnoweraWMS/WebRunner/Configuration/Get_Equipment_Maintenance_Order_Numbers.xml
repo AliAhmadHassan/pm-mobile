@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Get_Equipment_Maintenance_Order_Numbers" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Get_Equipment_Maintenance_Order_Numbers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProcessFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="MobileIconName" type="xs:string" minOccurs="0" />
+                <xs:element name="LookupFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShortDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessType" type="xs:string" minOccurs="0" />
+                <xs:element name="ProcessCode" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+                <xs:element name="CreatedDate" type="xs:string" minOccurs="0" />
+                <xs:element name="JSFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCached" type="xs:string" minOccurs="0" />
+                <xs:element name="IsCustomized" type="xs:string" minOccurs="0" />
+                <xs:element name="IsAttachment" type="xs:string" minOccurs="0" />
+                <xs:element name="FileExt" type="xs:string" minOccurs="0" />
+                <xs:element name="Field1" type="xs:string" minOccurs="0" />
+                <xs:element name="Field2" type="xs:string" minOccurs="0" />
+                <xs:element name="Default1" type="xs:string" minOccurs="0" />
+                <xs:element name="Default2" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Get_Equipment_Maintenance_Order_Numbers>
+    <ProcessFileName>Get_Equipment_Maintenance_Order_Numbers.ite</ProcessFileName>
+    <FileName>Get_Equipment_Maintenance_Order_Numbers.html</FileName>
+    <WebIconName>Get_Equipment_Maintenance_Order_Numbers.png</WebIconName>
+    <MobileIconName>Get_Equipment_Maintenance_Order_Numbers.png</MobileIconName>
+    <LookupFileName />
+    <ShortDescription>Pegar numero da Ordem de Manutenção</ShortDescription>
+    <LongDescription>Obter lista de número de ordem de manutenção da SAP para o número de equipamento declarados usando view ' CYAUPM</LongDescription>
+    <ProcessType>Data Extractor</ProcessType>
+    <ProcessCode>CYAUPM</ProcessCode>
+    <CreatedUserID>1</CreatedUserID>
+    <CreatedDate>5/6/2017 7:22:03 AM</CreatedDate>
+    <JSFileName>Get_Equipment_Maintenance_Order_Numbers.js</JSFileName>
+    <IsCached>True</IsCached>
+    <IsCustomized>False</IsCustomized>
+    <IsAttachment>False</IsAttachment>
+    <FileExt>1</FileExt>
+    <Field1>EQUNR</Field1>
+    <Field2>EQUNR</Field2>
+    <Default1 />
+    <Default2 />
+  </Get_Equipment_Maintenance_Order_Numbers>
+</NewDataSet>
